@@ -1,0 +1,11 @@
+.catalog-settings-content__input-title {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 600;
+  color: #7F8FA4;
+}
+
+.catalog-settings-content__input-title-star {
+  color: #ED1C24;
+  margin-left: 1px;
+}

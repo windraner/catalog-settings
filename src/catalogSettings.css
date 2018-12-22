@@ -1,0 +1,5 @@
+.catalog-settings__splitter {
+  width: 860px;
+  display: flex;
+  justify-content: space-between;
+}

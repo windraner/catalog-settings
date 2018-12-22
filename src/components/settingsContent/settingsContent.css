@@ -1,0 +1,16 @@
+.catalog-settings-content {
+  width: 860px;
+  background: #F8FAFB;
+  border: solid 1px #E2E7EE;
+  border-radius: 4px;
+  padding: 40px 0;
+}
+
+.catalog-settings-content__wrapper {
+  padding: 0 45px;
+}
+
+.catalog-settings-content__splitter {
+  display: flex;
+  justify-content: space-between;
+}

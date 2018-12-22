@@ -1,0 +1,8 @@
+.catalog-settings-content__hint-link {
+  color: #F67646;
+  text-decoration: none;
+}
+
+.catalog-settings-content__hint-link:hover {
+  text-decoration: underline;
+}
