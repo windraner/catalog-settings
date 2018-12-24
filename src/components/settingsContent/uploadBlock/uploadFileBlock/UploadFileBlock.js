@@ -14,7 +14,9 @@ export default class UploadFileBlock extends Component {
         />
 
         <div className="margin-top-20">
-          <UploadButton />
+          <UploadButton
+            {...this.props}
+          />
         </div>
 
         <div className="margin-top-20">

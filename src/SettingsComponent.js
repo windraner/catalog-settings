@@ -27,13 +27,15 @@ export default class SettingsComponent extends Component {
 
   render() {
     // console.log(this.props);
-    const { data } = this.props;
+    const { data, flags, languages } = this.props;
     return (
       <div>
         <Title />
 
         <SettignsContent
           data={data}
+          flags={flags}
+          languages={languages}
           getFormData={this.getFormData}
         />
 

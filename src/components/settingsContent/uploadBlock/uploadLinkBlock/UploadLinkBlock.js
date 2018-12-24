@@ -19,7 +19,10 @@ export default class UploadLinkBlock extends Component {
         />
 
         <div className="margin-top-20">
-          <LinkInput />
+          <LinkInput
+            {...this.props}
+            placeholder={'http://mysite.com/patch/to/CSV/source.csv'}
+          />
         </div>
 
         <div className="margin-top-20">

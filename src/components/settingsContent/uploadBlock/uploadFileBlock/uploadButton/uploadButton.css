@@ -1,4 +1,8 @@
 .catalog-settings-content__upload-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 34px;
   width: 131px;
   border: 1px solid rgba(0,0,0,0.1);
@@ -9,4 +13,21 @@
   line-height: 2.6em;
   text-align: center;
   cursor: pointer;
+}
+
+.catalog-settings-content__upload-button-icon {
+  font-family: 'IcoMoon';
+  padding-right: 5px;
+}
+
+.catalog-settings-content__upload-button-icon::before {
+  content: '\e90b';
+}
+
+.catalog-settings-content__upload-input {
+  display: none;
+}
+
+.catalog-settings-content__upload-button_disabled {
+  color: #B0B0B1;
 }

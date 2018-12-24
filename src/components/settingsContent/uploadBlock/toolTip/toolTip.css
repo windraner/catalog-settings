@@ -1,0 +1,26 @@
+.catalog-settings-content__upload-tool-tip {
+  position: absolute;
+  white-space:nowrap;
+  bottom: calc(100% + 7px);
+  background: #273142;
+  color: #fff;
+  padding: 0 12px;
+  border-radius: 4px;
+  opacity: 0.9;
+  line-height: 2.6em;
+  font-size: 1em;
+}
+
+.catalog-settings-content__upload-tool-tip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #273142 transparent transparent transparent;
+}

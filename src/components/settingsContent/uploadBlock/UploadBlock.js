@@ -7,11 +7,27 @@ import './uploadBlock.css';
 
 export default class UploadBlock extends Component {
   render() {
+    const { flags } = this.props;
+
     return (
       <div className="catalog-settings-content__upload-block">
-        <UploadLinkBlock />
-        <UploadBlockSeparator />
-        <UploadFileBlock />
+        <UploadLinkBlock
+          {...this.props}
+        />
+        {
+          flags.canUploadFile ?
+            <UploadBlockSeparator />
+            :
+            null
+        }
+        {
+          flags.canUploadFile ?
+            <UploadFileBlock
+              {...this.props}
+            />
+            :
+            null
+        }
       </div>
     );
   }
