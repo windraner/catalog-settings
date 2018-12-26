@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './inputTextArea.css';
 
@@ -27,3 +28,8 @@ export default class TextArea extends Component {
     );
   }
 }
+
+TextArea.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired
+};

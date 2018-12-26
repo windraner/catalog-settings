@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LinkInput /> matches the snapshot1 1`] = `
+<div
+  className="catalog-settings-content__link-input-wrapper"
+>
+  <input
+    className="catalog-settings-content__link-input"
+    onChange={[Function]}
+    placeholder="test"
+    type="text"
+    value="fileUrl"
+  />
+  <span
+    className="catalog-settings-content__link-input-clear"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`<LinkInput /> matches the snapshot2 1`] = `<DisabledLinkInput />`;

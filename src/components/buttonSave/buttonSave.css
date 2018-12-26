@@ -11,3 +11,13 @@
   text-align: center;
   cursor: pointer;
 }
+
+.catalog-settings__save-button:hover {
+  background: #eb7f40;
+  border-color: #d37239;
+}
+
+.catalog-settings__save-button:active {
+  background-color: #d86f31;
+  border: 1px solid rgba(0,0,0,0.1);
+}

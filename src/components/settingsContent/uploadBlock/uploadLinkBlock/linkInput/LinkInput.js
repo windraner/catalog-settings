@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DisabledLinkInput from './disabledLinkInput/DisabledLinkInput';
+import PropTypes from 'prop-types';
 
 import './linkInput.css';
 
@@ -27,7 +28,6 @@ export default class LinkInput extends Component {
         <input
           value={fileUrl ? fileUrl : ''}
           onChange={this.changeHandler}
-          // onBlur={this.blurHandler}
           type="text"
           placeholder={placeholder}
           className="catalog-settings-content__link-input"
@@ -45,3 +45,14 @@ export default class LinkInput extends Component {
     );
   }
 }
+
+LinkInput.propTypes = {
+  placeholder: PropTypes.string,
+  inputHandler: PropTypes.func.isRequired,
+  fileUrl: PropTypes.string.isRequired,
+  file: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object
+  ]).isRequired,
+  flags: PropTypes.object,
+};

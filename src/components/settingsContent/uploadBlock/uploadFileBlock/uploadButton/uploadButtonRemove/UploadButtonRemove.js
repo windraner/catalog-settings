@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './uploadButtonRemove.css';
 
@@ -22,3 +23,8 @@ export default class UploadButtonRemove extends Component {
     );
   }
 }
+
+UploadButtonRemove.propTypes = {
+  inputHandler: PropTypes.func.isRequired,
+  text: PropTypes.string.isRequired,
+};

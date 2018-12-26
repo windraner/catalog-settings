@@ -14,3 +14,10 @@
   display: flex;
   justify-content: space-between;
 }
+
+.catalog-settings-content__error-message {
+  color: #ed1c24;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 5px 0 0 0;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './switch.css';
 
@@ -24,3 +25,8 @@ export default class Switch extends Component {
     );
   }
 }
+
+Switch.propTypes = {
+  isChecked: PropTypes.bool.isRequired,
+  handlerCallBack: PropTypes.func.isRequired
+};

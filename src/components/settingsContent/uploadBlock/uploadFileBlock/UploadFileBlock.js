@@ -3,6 +3,7 @@ import Title from '../../title/Title';
 import Hint from '../../hint/Hint';
 import LinkedHint from '../linkedHint/LinkedHint';
 import UploadButton from './uploadButton/UploadButton';
+import PropTypes from 'prop-types';
 
 export default class UploadFileBlock extends Component {
   render() {
@@ -28,3 +29,13 @@ export default class UploadFileBlock extends Component {
     );
   }
 }
+
+UploadFileBlock.propTypes = {
+  inputHandler: PropTypes.func.isRequired,
+  fileUrl: PropTypes.string.isRequired,
+  file: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object
+  ]).isRequired,
+  flags: PropTypes.object,
+};

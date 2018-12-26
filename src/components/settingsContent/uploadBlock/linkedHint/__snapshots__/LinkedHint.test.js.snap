@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LinkedHint /> matches the snapshot 1`] = `
+<div
+  className="catalog-settings-content__hint"
+>
+  Find more info in our guide 
+  <a
+    className="catalog-settings-content__hint-link"
+    href="test"
+  >
+    here
+  </a>
+  .
+</div>
+`;

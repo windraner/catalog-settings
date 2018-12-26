@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './buttonCancel.css';
 
@@ -16,3 +17,7 @@ export default class ButtonCancel extends Component {
     );
   }
 }
+
+ButtonCancel.propTypes = {
+  handlerCallBack: PropTypes.func.isRequired
+};

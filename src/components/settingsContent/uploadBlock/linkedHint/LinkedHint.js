@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './linkedHint.css';
 
@@ -13,3 +14,7 @@ export default class LinkedHint extends Component {
     );
   }
 }
+
+LinkedHint.propTypes = {
+  link: PropTypes.string.isRequired,
+};

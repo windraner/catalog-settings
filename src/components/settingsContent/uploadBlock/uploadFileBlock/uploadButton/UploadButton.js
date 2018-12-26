@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DisabledUploadButton from './disabledUploadButton/DisabledUploadButton';
 import UploadButtonRemove from './uploadButtonRemove/UploadButtonRemove';
+import PropTypes from 'prop-types';
 
 import './uploadButton.css';
 
@@ -42,3 +43,13 @@ export default class UploadButton extends Component {
     );
   }
 }
+
+UploadButton.propTypes = {
+  inputHandler: PropTypes.func.isRequired,
+  fileUrl: PropTypes.string.isRequired,
+  file: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object
+  ]).isRequired,
+  flags: PropTypes.object,
+};

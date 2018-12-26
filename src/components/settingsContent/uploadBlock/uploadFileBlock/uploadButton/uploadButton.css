@@ -15,6 +15,14 @@
   cursor: pointer;
 }
 
+.catalog-settings-content__upload-button:hover {
+  border-color: #a9b0b8;
+}
+
+.catalog-settings-content__upload-button:active {
+  background: #ececec;
+}
+
 .catalog-settings-content__upload-button-icon {
   font-family: 'IcoMoon';
   padding-right: 5px;

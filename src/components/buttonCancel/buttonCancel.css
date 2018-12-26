@@ -9,3 +9,11 @@
   text-align: center;
   cursor: pointer;
 }
+
+.catalog-settings__cancel-button:hover {
+  border-color: #a9b0b8;
+}
+
+.catalog-settings__cancel-button:active {
+  background: #ececec;
+}

@@ -10,7 +10,7 @@
   font-weight: 600;
   line-height: 2.6em;
   text-align: center;
-  padding: 0 16px;
+  padding: 0 0 0 16px;
 }
 
 .catalog-settings-content__upload-button-remove-icon {
@@ -19,6 +19,15 @@
   font-weight: 500;
   font-size: 1.2em;
   cursor: pointer;
+  padding: 0 16px;
+}
+
+.catalog-settings-content__upload-button-remove-icon:hover {
+  border-left: solid 1px rgba(0,0,0,0.1);
+}
+
+.catalog-settings-content__upload-button-remove-icon:active {
+  background: #ececec;
 }
 
 .catalog-settings-content__upload-button-remove-icon::before {

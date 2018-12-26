@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './hint.css';
 
@@ -13,3 +14,7 @@ export default class Hint extends Component {
     );
   }
 }
+
+Hint.propTypes = {
+  text: PropTypes.string,
+};

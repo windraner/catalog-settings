@@ -16,7 +16,7 @@ const data = {
 };
 
 const cancelCallback = () => {
-  console.log('cancelCallback');
+  // console.log('cancelCallback');
 };
 
 const saveCallback = (newData) => {

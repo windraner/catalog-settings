@@ -1,40 +1,15 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Title from './title/Title';
 import InputField from './inputField/InputField';
 import TextArea from './textArea/TextArea';
 import Hint from './hint/Hint';
 import Switch from './switch/Switch';
 import UploadBlock from './uploadBlock/UploadBlock';
-import { createSelectOptions } from '../../utils/index';
-
-import Select, { components } from 'react-select';
+import DefaultProductLanguage from './select/defaultProductLanguage/DefaultProductLanguage';
+import AdditionalProductLanguage from './select/additionalProductLanguage/AdditionalProductLanguage';
+import PropTypes from 'prop-types';
 
 import './settingsContent.css';
-
-const options = [
-  { value: 'chocolate', label: 'Chocolate' },
-  { value: 'strawberry', label: 'Strawberry' },
-  { value: 'vanilla', label: 'Vanilla' }
-];
-
-const IndicatorsContainer = () => {
-  return null;
-};
-
-const MultiValueRemove = (props) => {
-  return <components.MultiValueRemove {...props}>×</components.MultiValueRemove>;
-};
-
-const Menu = (props) => {
-  const optionsLength = 11;
-  return (
-    <Fragment>
-      <components.Menu {...props}>
-        {props.children}
-      </components.Menu>
-    </Fragment>
-  );
-};
 
 export default class SettignContent extends Component {
   constructor(props) {
@@ -72,15 +47,9 @@ export default class SettignContent extends Component {
     this.setState({[field]: value});
   }
 
-  handleChange = (defaultLanguage) => {
-    this.setState({ defaultLanguage });
-    console.log('Option selected:', defaultLanguage);
-  }
-
   render() {
-    console.log(this.state);
     const { flags, languages } = this.props;
-    const { title, description, defaultFallback, hideVariants, defaultLanguage, fileUrl, file  } = this.state;
+    const { title, description, defaultFallback, hideVariants, defaultLanguage, additionalLanguages, fileUrl, file  } = this.state;
 
     return (
       <div className="catalog-settings-content margin-left-auto margin-right-auto margin-top-35">
@@ -110,30 +79,25 @@ export default class SettignContent extends Component {
 
         <div className="catalog-settings-content__wrapper">
           <Title title={'Default product language'} requred={true} />
-          <Select
-            value={defaultLanguage}
-            onChange={this.handleChange}
-            options={createSelectOptions(languages)}
-            // isMulti={true}
-            isSearchable={true}
-            placeholder={''}
-            // menuIsOpen={true}
-            components={{
-              IndicatorsContainer,
-              MultiValueRemove,
-              Menu
-            }}
+          <DefaultProductLanguage
+            defaultLanguage={defaultLanguage}
+            languages={languages}
+            inputHandler={this.inputHandler}
           />
+          {
+            !defaultLanguage ?
+              <div className="catalog-settings-content__error-message">Can not be empty</div>
+              :
+              null
+          }
           <Hint text={'Please use only letters, numbers, underscores or hypens.'} />
 
           <div className="margin-top-30">
             <Title title={'Additional product languages in catalog'} />
-            <Select
-              value={defaultLanguage}
-              onChange={this.handleChange}
-              options={createSelectOptions(languages)}
-              isMulti={true}
-              isSearchable={true}
+            <AdditionalProductLanguage
+              additionalLanguages={additionalLanguages}
+              languages={languages}
+              inputHandler={this.inputHandler}
             />
           </div>
 
@@ -185,3 +149,10 @@ export default class SettignContent extends Component {
     );
   }
 }
+
+SettignContent.propTypes = {
+  data: PropTypes.object.isRequired,
+  flags: PropTypes.object.isRequired,
+  languages: PropTypes.array.isRequired,
+  getFormData: PropTypes.func.isRequired,
+};

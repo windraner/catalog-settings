@@ -3,6 +3,7 @@ import Title from '../../title/Title';
 import Hint from '../../hint/Hint';
 import LinkInput from './linkInput/LinkInput';
 import LinkedHint from '../linkedHint/LinkedHint';
+import PropTypes from 'prop-types';
 
 import './uploadLinkBlock.css';
 
@@ -34,3 +35,13 @@ export default class UploadLinkBlock extends Component {
     );
   }
 }
+
+UploadLinkBlock.propTypes = {
+  inputHandler: PropTypes.func.isRequired,
+  fileUrl: PropTypes.string.isRequired,
+  file: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object
+  ]).isRequired,
+  flags: PropTypes.object,
+};

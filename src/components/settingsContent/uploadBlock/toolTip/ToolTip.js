@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './toolTip.css';
 
@@ -17,3 +18,8 @@ export default class ToolTip extends Component {
     );
   }
 }
+
+ToolTip.propTypes = {
+  text: PropTypes.string.isRequired,
+  isShow: PropTypes.bool.isRequired,
+};
