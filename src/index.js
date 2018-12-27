@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SettingsComponent from './SettingsComponent';
+import SettingsComponent from './settings-component';
 
 import './index.css';
 
