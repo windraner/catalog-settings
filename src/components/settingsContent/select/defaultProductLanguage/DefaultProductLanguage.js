@@ -26,10 +26,11 @@ export default class DefaultProductLanguage extends Component {
   }
 
   render() {
-    const { defaultLanguage, languages } = this.props;
+    const { defaultFallback, defaultLanguage, languages } = this.props;
 
     return (
       <Select
+        defaultFallback={defaultFallback}
         value={defaultLanguage ? {value: defaultLanguage, label: defaultLanguage} : ''}
         onChange={this.handleChange}
         options={createSelectOptions(languages)}

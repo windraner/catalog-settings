@@ -1,6 +1,6 @@
 .catalog-settings-content__upload-tool-tip {
   position: absolute;
-  white-space:nowrap;
+  white-space: nowrap;
   bottom: calc(100% + 7px);
   background: #273142;
   color: #fff;

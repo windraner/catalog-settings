@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   height: 34px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   color: #354052;
   font-size: 1.4em;
@@ -14,7 +14,7 @@
 }
 
 .catalog-settings-content__upload-button-remove-icon {
-  font-family: 'IcoMoon';
+  font-family: 'IcoMoon', sans-serif;
   color: #ed1c24;
   font-weight: 500;
   font-size: 1.2em;
@@ -23,7 +23,7 @@
 }
 
 .catalog-settings-content__upload-button-remove-icon:hover {
-  border-left: solid 1px rgba(0,0,0,0.1);
+  border-left: solid 1px rgba(0, 0, 0, 0.1);
 }
 
 .catalog-settings-content__upload-button-remove-icon:active {

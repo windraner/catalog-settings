@@ -25,18 +25,18 @@ export default class InputField extends Component {
   }
 
   renderError = () => {
-    const { requred } = this.props;
+    const { required } = this.props;
     const { isValidated } = this.state;
-    if(requred && isValidated) {
+    if(required && isValidated) {
       return (<div className="catalog-settings-content__error-message">Can not be empty</div>);
     }
     return null;
   }
 
   render() {
-    const { value, requred } = this.props;
+    const { value, required } = this.props;
     const { isValidated } = this.state;
-    const className = (requred && isValidated ?
+    const className = (required && isValidated ?
       'catalog-settings-content__input-field catalog-settings-content__input-field_error'
       :
       'catalog-settings-content__input-field');
@@ -58,5 +58,5 @@ export default class InputField extends Component {
 
 InputField.propTypes = {
   value: PropTypes.string,
-  requred: PropTypes.bool
+  required: PropTypes.bool
 };

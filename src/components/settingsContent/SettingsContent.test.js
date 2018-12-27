@@ -1,10 +1,9 @@
 import React from 'react';
-import SettignsContent from './SettignsContent';
+import SettingsContent from './SettingsContent';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import toJson from 'enzyme-to-json'
 
-configure({ adapter: new Adapter() })
+configure({ adapter: new Adapter() });
 
 const data = {
   title: 'Catalog title',
@@ -24,24 +23,24 @@ const props = {
     canHideVariants: true
   },
   languages: ['en', 'es', 'ru', 'de'],
-  getFormData: function() {},
-}
+  getFormData() {},
+};
 
-describe('<SettignsContent />', () => {
+describe('<SettingsContent />', () => {
   it('Check checkbox handler', () => {
-    const wrapper = shallow(<SettignsContent {...props} />)
+    const wrapper = shallow(<SettingsContent {...props} />);
     expect(wrapper.instance().state.defaultFallback).toBe(true);
-    wrapper.instance().checkboxHandler('defaultFallback')
+    wrapper.instance().checkboxHandler('defaultFallback');
     expect(wrapper.instance().state.defaultFallback).toBe(false);
   });
   it('Check inputHandler handler', () => {
-    const wrapper = shallow(<SettignsContent {...props} />)
-    expect(wrapper.instance().state.description).toBe("Catalog description");
-    wrapper.instance().inputHandler('description', 'Catalog description test')
-    expect(wrapper.instance().state.description).toBe("Catalog description test");
+    const wrapper = shallow(<SettingsContent {...props} />);
+    expect(wrapper.instance().state.description).toBe('Catalog description');
+    wrapper.instance().inputHandler('description', 'Catalog description test');
+    expect(wrapper.instance().state.description).toBe('Catalog description test');
   });
   it('matches the snapshot', () => {
-    const tree = shallow(<SettignsContent {...props} />)
-    expect(tree).toMatchSnapshot()
+    const tree = shallow(<SettingsContent {...props} />);
+    expect(tree).toMatchSnapshot();
   });
 });

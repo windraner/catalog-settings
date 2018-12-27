@@ -2,9 +2,9 @@ import React from 'react';
 import TextArea from './TextArea';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import toJson from 'enzyme-to-json'
+import toJson from 'enzyme-to-json';
 
-configure({ adapter: new Adapter() })
+configure({ adapter: new Adapter() });
 
 describe('<TextArea />', () => {
   it('Check for className and text', () => {
@@ -13,7 +13,7 @@ describe('<TextArea />', () => {
     expect(wrapper.find('.catalog-settings-content__textarea').props().value).toBe('test');
   });
   it('matches the snapshot', () => {
-    const tree = shallow(<TextArea value="test" onChange={function() {}} />)
-    expect(toJson(tree)).toMatchSnapshot()
-  })
+    const tree = shallow(<TextArea value="test" onChange={function() {}} />);
+    expect(toJson(tree)).toMatchSnapshot();
+  });
 });

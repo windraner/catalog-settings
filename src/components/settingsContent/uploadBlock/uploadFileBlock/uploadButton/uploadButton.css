@@ -5,9 +5,9 @@
   align-items: center;
   height: 34px;
   width: 131px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  color: #F67646;
+  color: #f67646;
   font-size: 1.4em;
   font-weight: 600;
   line-height: 2.6em;
@@ -24,7 +24,7 @@
 }
 
 .catalog-settings-content__upload-button-icon {
-  font-family: 'IcoMoon';
+  font-family: 'IcoMoon', sans-serif;
   padding-right: 5px;
 }
 
@@ -37,11 +37,11 @@
 }
 
 .catalog-settings-content__upload-button_disabled {
-  color: #B0B0B1;
+  color: #b0b0b1;
 }
 
 .catalog-settings-content__upload-button_disabled:hover {
-  border-color: rgba(0,0,0,0.1);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 .catalog-settings-content__upload-button_disabled:active {

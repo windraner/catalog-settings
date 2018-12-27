@@ -3,7 +3,7 @@ import ButtonSave from './ButtonSave';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
-configure({ adapter: new Adapter() })
+configure({ adapter: new Adapter() });
 
 describe('<ButtonSave />', () => {
   it('Check for className and text', () => {
@@ -19,7 +19,7 @@ describe('<ButtonSave />', () => {
     expect(onClickFunc).toBeCalled();
   });
   it('matches the snapshot', () => {
-    const tree = shallow(<ButtonSave handlerCallBack={function() {}} />)
-    expect(tree).toMatchSnapshot()
+    const tree = shallow(<ButtonSave handlerCallBack={function() {}} />);
+    expect(tree).toMatchSnapshot();
   });
 });

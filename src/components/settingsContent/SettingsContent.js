@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 
 import './settingsContent.css';
 
-export default class SettignsContent extends Component {
+export default class SettingsContent extends Component {
   constructor(props) {
     super();
     const { data } = props;
@@ -66,6 +66,27 @@ export default class SettignsContent extends Component {
     return null;
   }
 
+  renderUploadBlock = () => {
+    const { flags } = this.props;
+    const { fileUrl, file  } = this.state;
+
+    if(flags.canUploadFile) {
+      return (
+        <Fragment>
+          <hr className="border-separator margin-top-30 margin-bot-30" />
+
+          <UploadBlock
+            inputHandler={this.inputHandler}
+            fileUrl={fileUrl}
+            file={file}
+            flags={flags}
+          />
+        </Fragment>
+      );
+    }
+    return null;
+  }
+
   renderHideVariants = () => {
     const { flags } = this.props;
     const { hideVariants } = this.state;
@@ -90,21 +111,21 @@ export default class SettignsContent extends Component {
   }
 
   render() {
-    const { flags, languages } = this.props;
-    const { title, description, defaultLanguage, additionalLanguages, fileUrl, file  } = this.state;
+    const { languages } = this.props;
+    const { title, description, defaultLanguage, additionalLanguages, defaultFallback } = this.state;
 
     return (
       <div className="catalog-settings-content margin-left-auto margin-right-auto margin-top-35">
         <div className="catalog-settings-content__wrapper">
           <Title
             title={'Title'}
-            requred={true}
+            required={true}
           />
           <InputField
             value={title}
             name={'title'}
             onChange={this.inputHandler}
-            requred={true}
+            required={true}
           />
 
           <div className="margin-top-30">
@@ -120,8 +141,9 @@ export default class SettignsContent extends Component {
         <hr className="border-separator margin-top-30 margin-bot-30" />
 
         <div className="catalog-settings-content__wrapper">
-          <Title title={'Default product language'} requred={true} />
+          <Title title={'Default product language'} required={true} />
           <DefaultProductLanguage
+            defaultFallback={defaultFallback}
             defaultLanguage={defaultLanguage}
             languages={languages}
             inputHandler={this.inputHandler}
@@ -145,14 +167,7 @@ export default class SettignsContent extends Component {
 
           {this.renderDefaultLanguageSwitcher()}
 
-          <hr className="border-separator margin-top-30 margin-bot-30" />
-
-          <UploadBlock
-            inputHandler={this.inputHandler}
-            fileUrl={fileUrl}
-            file={file}
-            flags={flags}
-          />
+          {this.renderUploadBlock()}
 
           {this.renderHideVariants()}
         </div>
@@ -161,7 +176,7 @@ export default class SettignsContent extends Component {
   }
 }
 
-SettignsContent.propTypes = {
+SettingsContent.propTypes = {
   data: PropTypes.object.isRequired,
   flags: PropTypes.object.isRequired,
   languages: PropTypes.array.isRequired,

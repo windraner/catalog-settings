@@ -1,9 +1,9 @@
 import React from 'react';
 import SettingsComponent from './SettingsComponent';
-import { configure, shallow, mount } from 'enzyme';
+import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
-configure({ adapter: new Adapter() })
+configure({ adapter: new Adapter() });
 
 const data = {
   title: 'Catalog title',
@@ -23,13 +23,13 @@ const props = {
     canHideVariants: true
   },
   languages: ['en', 'es', 'ru', 'de'],
-  onSave: function() {},
-  onCancel: function() {},
-}
+  onSave() {},
+  onCancel() {},
+};
 
 describe('<SettingsComponent />', () => {
   it('matches the snapshot', () => {
-    const tree = shallow(<SettingsComponent {...props} />)
-    expect(tree).toMatchSnapshot()
+    const tree = shallow(<SettingsComponent {...props} />);
+    expect(tree).toMatchSnapshot();
   });
 });

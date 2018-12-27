@@ -12,20 +12,12 @@ const UploadBlock = (props) => {
       <UploadLinkBlock
         {...props}
       />
-      {
-        props.flags.canUploadFile ?
-          <UploadBlockSeparator />
-          :
-          null
-      }
-      {
-        props.flags.canUploadFile ?
-          <UploadFileBlock
-            {...props}
-          />
-          :
-          null
-      }
+
+      <UploadBlockSeparator />
+
+      <UploadFileBlock
+        {...props}
+      />
     </div>
   );
 };

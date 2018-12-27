@@ -3,7 +3,7 @@ import Title from './Title';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
-configure({ adapter: new Adapter() })
+configure({ adapter: new Adapter() });
 
 describe('<Title />', () => {
   it('Check for className and text', () => {
@@ -12,7 +12,7 @@ describe('<Title />', () => {
     expect(wrapper.find('.catalog-settings__title').text()).toBe('General settings');
   });
   it('matches the snapshot', () => {
-    const tree = shallow(<Title />)
-    expect(tree).toMatchSnapshot()
-  })
+    const tree = shallow(<Title />);
+    expect(tree).toMatchSnapshot();
+  });
 });

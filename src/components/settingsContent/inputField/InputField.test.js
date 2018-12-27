@@ -2,9 +2,9 @@ import React from 'react';
 import InputField from './InputField';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import toJson from 'enzyme-to-json'
+import toJson from 'enzyme-to-json';
 
-configure({ adapter: new Adapter() })
+configure({ adapter: new Adapter() });
 
 describe('<InputField />', () => {
   it('Check for className and text', () => {
@@ -15,13 +15,13 @@ describe('<InputField />', () => {
   it('Check validation', () => {
     const wrapper = shallow(<InputField />);
     expect(wrapper.find('.catalog-settings-content__error-message').length).toBe(0);
-    wrapper.setState({ isValidated: true })
+    wrapper.setState({ isValidated: true });
     expect(wrapper.find('.catalog-settings-content__error-message').length).toBe(0);
-    wrapper.setProps({ requred: true })
+    wrapper.setProps({ required: true });
     expect(wrapper.find('.catalog-settings-content__error-message').text()).toBe('Can not be empty');
   });
   it('matches the snapshot', () => {
-    const tree = shallow(<InputField />)
-    expect(toJson(tree)).toMatchSnapshot()
-  })
+    const tree = shallow(<InputField />);
+    expect(toJson(tree)).toMatchSnapshot();
+  });
 });

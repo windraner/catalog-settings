@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SettignsContent /> matches the snapshot 1`] = `
+exports[`<SettingsContent /> matches the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SettignsContent
+  Symbol(enzyme.__unrendered__): <SettingsContent
     data={
       Object {
         "additionalLanguages": Array [
@@ -53,13 +53,13 @@ ShallowWrapper {
           className="catalog-settings-content__wrapper"
         >
           <Title
-            requred={true}
+            required={true}
             title="Title"
           />
           <InputField
             name="title"
             onChange={[Function]}
-            requred={true}
+            required={true}
             value="Catalog title"
           />
           <div
@@ -82,10 +82,11 @@ ShallowWrapper {
           className="catalog-settings-content__wrapper"
         >
           <Title
-            requred={true}
+            required={true}
             title="Default product language"
           />
           <DefaultProductLanguage
+            defaultFallback={true}
             defaultLanguage="en"
             inputHandler={[Function]}
             languages={
@@ -136,20 +137,22 @@ ShallowWrapper {
               name="defaultFallback"
             />
           </div>
-          <hr
-            className="border-separator margin-top-30 margin-bot-30"
-          />
-          <UploadBlock
-            file=""
-            fileUrl=""
-            flags={
-              Object {
-                "canHideVariants": true,
-                "canUploadFile": true,
+          <React.Fragment>
+            <hr
+              className="border-separator margin-top-30 margin-bot-30"
+            />
+            <UploadBlock
+              file=""
+              fileUrl=""
+              flags={
+                Object {
+                  "canHideVariants": true,
+                  "canUploadFile": true,
+                }
               }
-            }
-            inputHandler={[Function]}
-          />
+              inputHandler={[Function]}
+            />
+          </React.Fragment>
           <React.Fragment>
             <hr
               className="border-separator margin-top-30 margin-bot-30"
@@ -180,13 +183,13 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Title
-              requred={true}
+              required={true}
               title="Title"
             />,
             <InputField
               name="title"
               onChange={[Function]}
-              requred={true}
+              required={true}
               value="Catalog title"
             />,
             <div
@@ -211,7 +214,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "requred": true,
+              "required": true,
               "title": "Title",
             },
             "ref": null,
@@ -225,7 +228,7 @@ ShallowWrapper {
             "props": Object {
               "name": "title",
               "onChange": [Function],
-              "requred": true,
+              "required": true,
               "value": "Catalog title",
             },
             "ref": null,
@@ -299,10 +302,11 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Title
-              requred={true}
+              required={true}
               title="Default product language"
             />,
             <DefaultProductLanguage
+              defaultFallback={true}
               defaultLanguage="en"
               inputHandler={[Function]}
               languages={
@@ -354,20 +358,22 @@ ShallowWrapper {
                 name="defaultFallback"
               />
             </div>,
-            <hr
-              className="border-separator margin-top-30 margin-bot-30"
-            />,
-            <UploadBlock
-              file=""
-              fileUrl=""
-              flags={
-                Object {
-                  "canHideVariants": true,
-                  "canUploadFile": true,
+            <React.Fragment>
+              <hr
+                className="border-separator margin-top-30 margin-bot-30"
+              />
+              <UploadBlock
+                file=""
+                fileUrl=""
+                flags={
+                  Object {
+                    "canHideVariants": true,
+                    "canUploadFile": true,
+                  }
                 }
-              }
-              inputHandler={[Function]}
-            />,
+                inputHandler={[Function]}
+              />
+            </React.Fragment>,
             <React.Fragment>
               <hr
                 className="border-separator margin-top-30 margin-bot-30"
@@ -395,7 +401,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "requred": true,
+              "required": true,
               "title": "Default product language",
             },
             "ref": null,
@@ -407,6 +413,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
+              "defaultFallback": true,
               "defaultLanguage": "en",
               "inputHandler": [Function],
               "languages": Array [
@@ -547,30 +554,57 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "border-separator margin-top-30 margin-bot-30",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "hr",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "file": "",
-              "fileUrl": "",
-              "flags": Object {
-                "canHideVariants": true,
-                "canUploadFile": true,
-              },
-              "inputHandler": [Function],
+              "children": Array [
+                <hr
+                  className="border-separator margin-top-30 margin-bot-30"
+                />,
+                <UploadBlock
+                  file=""
+                  fileUrl=""
+                  flags={
+                    Object {
+                      "canHideVariants": true,
+                      "canUploadFile": true,
+                    }
+                  }
+                  inputHandler={[Function]}
+                />,
+              ],
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "border-separator margin-top-30 margin-bot-30",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "hr",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "file": "",
+                  "fileUrl": "",
+                  "flags": Object {
+                    "canHideVariants": true,
+                    "canUploadFile": true,
+                  },
+                  "inputHandler": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": Symbol(react.fragment),
           },
           Object {
             "instance": null,
@@ -674,13 +708,13 @@ ShallowWrapper {
             className="catalog-settings-content__wrapper"
           >
             <Title
-              requred={true}
+              required={true}
               title="Title"
             />
             <InputField
               name="title"
               onChange={[Function]}
-              requred={true}
+              required={true}
               value="Catalog title"
             />
             <div
@@ -703,10 +737,11 @@ ShallowWrapper {
             className="catalog-settings-content__wrapper"
           >
             <Title
-              requred={true}
+              required={true}
               title="Default product language"
             />
             <DefaultProductLanguage
+              defaultFallback={true}
               defaultLanguage="en"
               inputHandler={[Function]}
               languages={
@@ -757,20 +792,22 @@ ShallowWrapper {
                 name="defaultFallback"
               />
             </div>
-            <hr
-              className="border-separator margin-top-30 margin-bot-30"
-            />
-            <UploadBlock
-              file=""
-              fileUrl=""
-              flags={
-                Object {
-                  "canHideVariants": true,
-                  "canUploadFile": true,
+            <React.Fragment>
+              <hr
+                className="border-separator margin-top-30 margin-bot-30"
+              />
+              <UploadBlock
+                file=""
+                fileUrl=""
+                flags={
+                  Object {
+                    "canHideVariants": true,
+                    "canUploadFile": true,
+                  }
                 }
-              }
-              inputHandler={[Function]}
-            />
+                inputHandler={[Function]}
+              />
+            </React.Fragment>
             <React.Fragment>
               <hr
                 className="border-separator margin-top-30 margin-bot-30"
@@ -801,13 +838,13 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Title
-                requred={true}
+                required={true}
                 title="Title"
               />,
               <InputField
                 name="title"
                 onChange={[Function]}
-                requred={true}
+                required={true}
                 value="Catalog title"
               />,
               <div
@@ -832,7 +869,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "requred": true,
+                "required": true,
                 "title": "Title",
               },
               "ref": null,
@@ -846,7 +883,7 @@ ShallowWrapper {
               "props": Object {
                 "name": "title",
                 "onChange": [Function],
-                "requred": true,
+                "required": true,
                 "value": "Catalog title",
               },
               "ref": null,
@@ -920,10 +957,11 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Title
-                requred={true}
+                required={true}
                 title="Default product language"
               />,
               <DefaultProductLanguage
+                defaultFallback={true}
                 defaultLanguage="en"
                 inputHandler={[Function]}
                 languages={
@@ -975,20 +1013,22 @@ ShallowWrapper {
                   name="defaultFallback"
                 />
               </div>,
-              <hr
-                className="border-separator margin-top-30 margin-bot-30"
-              />,
-              <UploadBlock
-                file=""
-                fileUrl=""
-                flags={
-                  Object {
-                    "canHideVariants": true,
-                    "canUploadFile": true,
+              <React.Fragment>
+                <hr
+                  className="border-separator margin-top-30 margin-bot-30"
+                />
+                <UploadBlock
+                  file=""
+                  fileUrl=""
+                  flags={
+                    Object {
+                      "canHideVariants": true,
+                      "canUploadFile": true,
+                    }
                   }
-                }
-                inputHandler={[Function]}
-              />,
+                  inputHandler={[Function]}
+                />
+              </React.Fragment>,
               <React.Fragment>
                 <hr
                   className="border-separator margin-top-30 margin-bot-30"
@@ -1016,7 +1056,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "requred": true,
+                "required": true,
                 "title": "Default product language",
               },
               "ref": null,
@@ -1028,6 +1068,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
+                "defaultFallback": true,
                 "defaultLanguage": "en",
                 "inputHandler": [Function],
                 "languages": Array [
@@ -1168,30 +1209,57 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "border-separator margin-top-30 margin-bot-30",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "hr",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "file": "",
-                "fileUrl": "",
-                "flags": Object {
-                  "canHideVariants": true,
-                  "canUploadFile": true,
-                },
-                "inputHandler": [Function],
+                "children": Array [
+                  <hr
+                    className="border-separator margin-top-30 margin-bot-30"
+                  />,
+                  <UploadBlock
+                    file=""
+                    fileUrl=""
+                    flags={
+                      Object {
+                        "canHideVariants": true,
+                        "canUploadFile": true,
+                      }
+                    }
+                    inputHandler={[Function]}
+                  />,
+                ],
               },
               "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "border-separator margin-top-30 margin-bot-30",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "hr",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "file": "",
+                    "fileUrl": "",
+                    "flags": Object {
+                      "canHideVariants": true,
+                      "canUploadFile": true,
+                    },
+                    "inputHandler": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": Symbol(react.fragment),
             },
             Object {
               "instance": null,

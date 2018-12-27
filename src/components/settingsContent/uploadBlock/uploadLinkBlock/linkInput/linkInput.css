@@ -16,7 +16,7 @@
 }
 
 .catalog-settings-content__link-input::placeholder {
-  color: #B0B0B1;
+  color: #b0b0b1;
   font-weight: 500;
 }
 
@@ -28,8 +28,8 @@
   margin: auto;
   height: 16px;
   font-size: 1.6em;
-  font-family: 'IcoMoon';
-  color: #A8AAB7;
+  font-family: 'IcoMoon', sans-serif;
+  color: #a8aab7;
   cursor: pointer;
 }
 

@@ -51,7 +51,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Title />,
-        <SettignsContent
+        <SettingsContent
           data={
             Object {
               "additionalLanguages": Array [
@@ -193,7 +193,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Title />,
-          <SettignsContent
+          <SettingsContent
             data={
               Object {
                 "additionalLanguages": Array [

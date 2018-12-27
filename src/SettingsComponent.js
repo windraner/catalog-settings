@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Title from './components/title/Title';
-import SettignsContent from './components/settingsContent/SettignsContent';
+import SettingsContent from './components/settingsContent/SettingsContent';
 import ButtonCancel from './components/buttonCancel/ButtonCancel';
 import ButtonSave from './components/buttonSave/ButtonSave';
 import PropTypes from 'prop-types';
@@ -39,7 +39,7 @@ export default class SettingsComponent extends Component {
       <div>
         <Title />
 
-        <SettignsContent
+        <SettingsContent
           data={data}
           flags={flags}
           languages={languages}

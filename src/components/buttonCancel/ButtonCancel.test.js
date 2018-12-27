@@ -3,7 +3,7 @@ import ButtonCancel from './ButtonCancel';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
-configure({ adapter: new Adapter() })
+configure({ adapter: new Adapter() });
 
 describe('<ButtonCancel />', () => {
   it('Check for className and text', () => {
@@ -19,7 +19,7 @@ describe('<ButtonCancel />', () => {
     expect(onClickFunc).toBeCalled();
   });
   it('matches the snapshot', () => {
-    const tree = shallow(<ButtonCancel handlerCallBack={function() {}} />)
-    expect(tree).toMatchSnapshot()
+    const tree = shallow(<ButtonCancel handlerCallBack={function() {}} />);
+    expect(tree).toMatchSnapshot();
   });
 });

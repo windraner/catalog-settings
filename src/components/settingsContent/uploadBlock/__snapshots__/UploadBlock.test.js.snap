@@ -10,5 +10,12 @@ exports[`<UploadBlock /> matches the snapshot 1`] = `
     flags={Object {}}
     inputHandler={[Function]}
   />
+  <UploadBlockSeparator />
+  <UploadFileBlock
+    file=""
+    fileUrl=""
+    flags={Object {}}
+    inputHandler={[Function]}
+  />
 </div>
 `;

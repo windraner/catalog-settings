@@ -1,10 +1,10 @@
 .catalog-settings__save-button {
   height: 46px;
   width: 150px;
-  background: #EA7835;
-  border: 1px solid rgba(0,0,0,0.1);
+  background: #ea7835;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 1.8em;
   font-weight: 600;
   line-height: 2.7em;
@@ -19,5 +19,5 @@
 
 .catalog-settings__save-button:active {
   background-color: #d86f31;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
