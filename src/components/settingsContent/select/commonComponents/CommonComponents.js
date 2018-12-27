@@ -11,7 +11,7 @@ export const Control = (props) => {
     <div
       onMouseDown={props.innerProps.onMouseDown}
       className="catalog-settings-content__select-control"
-      style={!props.hasValue ? {borderColor: '#ED1C24'} : null}
+      style={!props.hasValue ? {borderColor: '#ed1c24'} : null}
     >
       {props.children}
     </div>
