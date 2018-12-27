@@ -39,3 +39,11 @@
 .catalog-settings-content__upload-button_disabled {
   color: #B0B0B1;
 }
+
+.catalog-settings-content__upload-button_disabled:hover {
+  border-color: rgba(0,0,0,0.1);
+}
+
+.catalog-settings-content__upload-button_disabled:active {
+  background: transparent;
+}

@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import './hint.css';
 
-export default class Hint extends Component {
-  render() {
-    const { text } = this.props;
-
+ const Hint = (props) => {
     return (
       <div className="catalog-settings-content__hint">
-        {text}
+        {props.text}
       </div>
     );
-  }
-}
+};
 
 Hint.propTypes = {
   text: PropTypes.string,
 };
+
+export default Hint;

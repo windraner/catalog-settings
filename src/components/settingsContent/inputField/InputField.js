@@ -24,10 +24,22 @@ export default class InputField extends Component {
     }
   }
 
+  renderError = () => {
+    const { requred } = this.props;
+    const { isValidated } = this.state;
+    if(requred && isValidated) {
+      return (<div className="catalog-settings-content__error-message">Can not be empty</div>);
+    }
+    return null;
+  }
+
   render() {
     const { value, requred } = this.props;
     const { isValidated } = this.state;
-    const error = requred && isValidated;
+    const className = (requred && isValidated ?
+      'catalog-settings-content__input-field catalog-settings-content__input-field_error'
+      :
+      'catalog-settings-content__input-field');
 
     return (
       <Fragment>
@@ -36,19 +48,9 @@ export default class InputField extends Component {
           onChange={this.changeHandler}
           onBlur={this.blurHandler}
           type="text"
-          className={
-            error ?
-              'catalog-settings-content__input-field catalog-settings-content__input-field_error'
-              :
-              'catalog-settings-content__input-field'
-          }
+          className={className}
         />
-        {
-          error ?
-            <div className="catalog-settings-content__error-message">Can not be empty</div>
-            :
-            null
-        }
+        {this.renderError()}
       </Fragment>
     );
   }

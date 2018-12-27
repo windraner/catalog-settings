@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UploadLinkBlock /> matches the snapshot 1`] = `
+<div
+  className="catalog-settings-content__upload-link-block"
+>
+  <Title
+    title="URL of remote products CSV source"
+  />
+  <Hint
+    text="Photoslurp will periodically fetch the products data from the given sourceand automatically update the products of this catalog if you submit the source URL here:"
+  />
+  <div
+    className="margin-top-20"
+  >
+    <LinkInput
+      file=""
+      fileUrl=""
+      flags={Object {}}
+      inputHandler={[Function]}
+      placeholder="http://mysite.com/patch/to/CSV/source.csv"
+    />
+  </div>
+  <div
+    className="margin-top-20"
+  >
+    <LinkedHint
+      link="#"
+    />
+  </div>
+</div>
+`;

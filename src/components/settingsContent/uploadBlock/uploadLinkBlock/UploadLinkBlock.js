@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Title from '../../title/Title';
 import Hint from '../../hint/Hint';
 import LinkInput from './linkInput/LinkInput';
@@ -7,34 +7,32 @@ import PropTypes from 'prop-types';
 
 import './uploadLinkBlock.css';
 
-export default class UploadLinkBlock extends Component {
-  render() {
-    return (
-      <div className="catalog-settings-content__upload-link-block">
-        <Title title={'URL of remote products CSV source'} />
+const UploadLinkBlock = (props) => {
+  return (
+    <div className="catalog-settings-content__upload-link-block">
+      <Title title={'URL of remote products CSV source'} />
 
-        <Hint text={
-          'Photoslurp will periodically fetch the products data from the given source' +
-          'and automatically update the products of this catalog if you submit the source URL here:'
-          }
+      <Hint text={
+        'Photoslurp will periodically fetch the products data from the given source' +
+        'and automatically update the products of this catalog if you submit the source URL here:'
+        }
+      />
+
+      <div className="margin-top-20">
+        <LinkInput
+          {...props}
+          placeholder={'http://mysite.com/patch/to/CSV/source.csv'}
         />
-
-        <div className="margin-top-20">
-          <LinkInput
-            {...this.props}
-            placeholder={'http://mysite.com/patch/to/CSV/source.csv'}
-          />
-        </div>
-
-        <div className="margin-top-20">
-          <LinkedHint
-            link={'#'}
-          />
-        </div>
       </div>
-    );
-  }
-}
+
+      <div className="margin-top-20">
+        <LinkedHint
+          link={'#'}
+        />
+      </div>
+    </div>
+  );
+};
 
 UploadLinkBlock.propTypes = {
   inputHandler: PropTypes.func.isRequired,
@@ -45,3 +43,5 @@ UploadLinkBlock.propTypes = {
   ]).isRequired,
   flags: PropTypes.object,
 };
+
+export default UploadLinkBlock;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UploadBlockSeparator /> matches the snapshot 1`] = `
+<div
+  className="catalog-settings-content__upload-separator"
+>
+  <div
+    className="catalog-settings-content__upload-separator-border"
+  />
+  <div
+    className="catalog-settings-content__upload-separator-text"
+  >
+    OR
+  </div>
+  <div
+    className="catalog-settings-content__upload-separator-border"
+  />
+</div>
+`;

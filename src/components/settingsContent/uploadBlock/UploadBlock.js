@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import UploadLinkBlock from './uploadLinkBlock/UploadLinkBlock';
 import UploadBlockSeparator from './uploadBlockSeparator/UploadBlockSeparator';
 import UploadFileBlock from './uploadFileBlock/UploadFileBlock';
@@ -6,33 +6,29 @@ import PropTypes from 'prop-types';
 
 import './uploadBlock.css';
 
-export default class UploadBlock extends Component {
-  render() {
-    const { flags } = this.props;
-
-    return (
-      <div className="catalog-settings-content__upload-block">
-        <UploadLinkBlock
-          {...this.props}
-        />
-        {
-          flags.canUploadFile ?
-            <UploadBlockSeparator />
-            :
-            null
-        }
-        {
-          flags.canUploadFile ?
-            <UploadFileBlock
-              {...this.props}
-            />
-            :
-            null
-        }
-      </div>
-    );
-  }
-}
+const UploadBlock = (props) => {
+  return (
+    <div className="catalog-settings-content__upload-block">
+      <UploadLinkBlock
+        {...props}
+      />
+      {
+        props.flags.canUploadFile ?
+          <UploadBlockSeparator />
+          :
+          null
+      }
+      {
+        props.flags.canUploadFile ?
+          <UploadFileBlock
+            {...props}
+          />
+          :
+          null
+      }
+    </div>
+  );
+};
 
 UploadBlock.propTypes = {
   inputHandler: PropTypes.func.isRequired,
@@ -43,3 +39,5 @@ UploadBlock.propTypes = {
   ]).isRequired,
   flags: PropTypes.object,
 };
+
+export default UploadBlock;

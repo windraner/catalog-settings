@@ -1,35 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import './inputTextArea.css';
 
-export default class TextArea extends Component {
-  changeHandler = (e) => {
-    const { name } = this.props;
-    this.props.onChange(name, e.target.value);
-  }
-
-  blurHandler = (e) => {
-    const { name } = this.props;
-    this.props.onChange(name, e.target.value.trim());
-  }
-
-  render() {
-    const { value } = this.props;
-
-    return (
-      <textarea
-        value={value ? value : ''}
-        onChange={this.changeHandler}
-        onBlur={this.blurHandler}
-        type="text"
-        className="catalog-settings-content__textarea"
-      />
-    );
-  }
-}
+const TextArea = (props) => {
+  return (
+    <textarea
+      value={props.value ? props.value : ''}
+      onChange={(e) => props.onChange(props.name, e.target.value)}
+      onBlur={(e) => props.onChange(props.name, e.target.value.trim())}
+      type="text"
+      className="catalog-settings-content__textarea"
+    />
+  );
+};
 
 TextArea.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired
 };
+
+export default TextArea;

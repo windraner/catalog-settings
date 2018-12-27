@@ -15,7 +15,9 @@ export default class DefaultProductLanguage extends Component {
 
   handleChange = (pickedLanguage) => {
     const newPickedLanguage = pickedLanguage.find((item) => {
-      if(item.value !== this.props.defaultLanguage) {return item;}
+      if(item.value !== this.props.defaultLanguage) {
+        return item;
+      }
     });
 
     const value = newPickedLanguage ? newPickedLanguage.value : '';
@@ -38,6 +40,7 @@ export default class DefaultProductLanguage extends Component {
           menu: (base) => ({ ...base, margin: 0}),
           menuList: (base) => ({ ...base, fontSize: '1.4em', fontWeight: 600 }),
           valueContainer: (base) => ({ ...base, paddingLeft: 0, height: '100%' }),
+          input: (base) => ({ ...base, fontSize: '1.4em' }),
         }}
         components={{
           Control,

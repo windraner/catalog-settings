@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Title from './title/Title';
 import InputField from './inputField/InputField';
 import TextArea from './textArea/TextArea';
@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 
 import './settingsContent.css';
 
-export default class SettignContent extends Component {
+export default class SettignsContent extends Component {
   constructor(props) {
     super();
     const { data } = props;
@@ -47,9 +47,51 @@ export default class SettignContent extends Component {
     this.setState({[field]: value});
   }
 
+  renderDefaultLanguageSwitcher = () => {
+    const { defaultLanguage, defaultFallback } = this.state;
+
+    if(defaultLanguage) {
+      return (
+        <div className="catalog-settings-content__splitter margin-top-30">
+          <Title title={'Fallback to default language of catalog when requested language is not available?'} />
+          <Switch
+            handlerCallBack={this.checkboxHandler}
+            isChecked={defaultFallback}
+            name={'defaultFallback'}
+          />
+        </div>
+      );
+    }
+
+    return null;
+  }
+
+  renderHideVariants = () => {
+    const { flags } = this.props;
+    const { hideVariants } = this.state;
+
+    if(flags.canHideVariants) {
+      return (
+        <Fragment>
+          <hr className="border-separator margin-top-30 margin-bot-30" />
+          <div className="catalog-settings-content__splitter margin-top-30">
+            <Title title={'Do you want to hide product variants?'} />
+            <Switch
+              handlerCallBack={this.checkboxHandler}
+              isChecked={hideVariants}
+              name={'hideVariants'}
+            />
+          </div>
+        </Fragment>
+      );
+    }
+
+    return null;
+  }
+
   render() {
     const { flags, languages } = this.props;
-    const { title, description, defaultFallback, hideVariants, defaultLanguage, additionalLanguages, fileUrl, file  } = this.state;
+    const { title, description, defaultLanguage, additionalLanguages, fileUrl, file  } = this.state;
 
     return (
       <div className="catalog-settings-content margin-left-auto margin-right-auto margin-top-35">
@@ -101,19 +143,7 @@ export default class SettignContent extends Component {
             />
           </div>
 
-          {
-            defaultLanguage ?
-              <div className="catalog-settings-content__splitter margin-top-30">
-                <Title title={'Fallback to default language of catalog when requested language is not available?'} />
-                <Switch
-                  handlerCallBack={this.checkboxHandler}
-                  isChecked={defaultFallback}
-                  name={'defaultFallback'}
-                />
-              </div>
-              :
-              null
-          }
+          {this.renderDefaultLanguageSwitcher()}
 
           <hr className="border-separator margin-top-30 margin-bot-30" />
 
@@ -124,33 +154,14 @@ export default class SettignContent extends Component {
             flags={flags}
           />
 
-          {
-            flags.canHideVariants ?
-              <hr className="border-separator margin-top-30 margin-bot-30" />
-              :
-              null
-          }
-
-          {
-            flags.canHideVariants ?
-              <div className="catalog-settings-content__splitter margin-top-30">
-                <Title title={'Do you want to hide product variants?'} />
-                <Switch
-                  handlerCallBack={this.checkboxHandler}
-                  isChecked={hideVariants}
-                  name={'hideVariants'}
-                />
-              </div>
-              :
-              null
-          }
+          {this.renderHideVariants()}
         </div>
       </div>
     );
   }
 }
 
-SettignContent.propTypes = {
+SettignsContent.propTypes = {
   data: PropTypes.object.isRequired,
   flags: PropTypes.object.isRequired,
   languages: PropTypes.array.isRequired,

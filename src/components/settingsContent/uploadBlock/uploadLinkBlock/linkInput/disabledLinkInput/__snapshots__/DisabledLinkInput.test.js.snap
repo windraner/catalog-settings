@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DisabledLinkInput /> matches the snapshot 1`] = `
+<div
+  className="catalog-settings-content__link-input catalog-settings-content__link-input_disabled"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="catalog-settings-content__tooltip-wrapper"
+  >
+    <ToolTip
+      isShow={false}
+      text="Remove uploaded file to add link to CSV source file"
+    />
+  </div>
+  http://mysite.com/patch/to/CSV/source.csv
+</div>
+`;

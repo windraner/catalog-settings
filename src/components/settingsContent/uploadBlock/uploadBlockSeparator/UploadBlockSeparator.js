@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './uploadBlockSeparator.css';
 
-export default class UploadBlockSeparator extends Component {
-  render() {
-    return (
-      <div className="catalog-settings-content__upload-separator">
-        <div className="catalog-settings-content__upload-separator-border"></div>
-        <div className="catalog-settings-content__upload-separator-text">OR</div>
-        <div className="catalog-settings-content__upload-separator-border"></div>
-      </div>
-    );
-  }
-}
+ const UploadBlockSeparator = () => {
+  return (
+    <div className="catalog-settings-content__upload-separator">
+      <div className="catalog-settings-content__upload-separator-border"></div>
+      <div className="catalog-settings-content__upload-separator-text">OR</div>
+      <div className="catalog-settings-content__upload-separator-border"></div>
+    </div>
+  );
+};
+
+export default UploadBlockSeparator;

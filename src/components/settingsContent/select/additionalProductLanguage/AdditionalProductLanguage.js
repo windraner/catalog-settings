@@ -35,6 +35,7 @@ export default class AdditionalProductLanguage extends Component {
           menu: (base) => ({ ...base, margin: 0}),
           menuList: (base) => ({ ...base, fontSize: '1.4em', fontWeight: 600 }),
           valueContainer: (base) => ({ ...base, paddingLeft: 0, height: '100%' }),
+          input: (base) => ({ ...base, fontSize: '1.4em' }),
         }}
         components={{
           Control: ControlWithoutValidation,

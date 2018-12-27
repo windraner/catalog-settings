@@ -1,0 +1,349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SettingsComponent /> matches the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SettingsComponent
+    data={
+      Object {
+        "additionalLanguages": Array [
+          "es",
+          "ru",
+        ],
+        "defaultFallback": true,
+        "defaultLanguage": "en",
+        "description": "Catalog description",
+        "file": "",
+        "fileUrl": "",
+        "hideVariants": false,
+        "title": "Catalog title",
+      }
+    }
+    flags={
+      Object {
+        "canHideVariants": true,
+        "canUploadFile": true,
+      }
+    }
+    languages={
+      Array [
+        "en",
+        "es",
+        "ru",
+        "de",
+      ]
+    }
+    onCancel={[Function]}
+    onSave={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Title />,
+        <SettignsContent
+          data={
+            Object {
+              "additionalLanguages": Array [
+                "es",
+                "ru",
+              ],
+              "defaultFallback": true,
+              "defaultLanguage": "en",
+              "description": "Catalog description",
+              "file": "",
+              "fileUrl": "",
+              "hideVariants": false,
+              "title": "Catalog title",
+            }
+          }
+          flags={
+            Object {
+              "canHideVariants": true,
+              "canUploadFile": true,
+            }
+          }
+          getFormData={[Function]}
+          languages={
+            Array [
+              "en",
+              "es",
+              "ru",
+              "de",
+            ]
+          }
+        />,
+        <div
+          className="catalog-settings__splitter margin-left-auto margin-right-auto margin-top-30 margin-bot-30"
+        >
+          <ButtonCancel
+            handlerCallBack={[Function]}
+          />
+          <ButtonSave
+            handlerCallBack={[Function]}
+          />
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "additionalLanguages": Array [
+              "es",
+              "ru",
+            ],
+            "defaultFallback": true,
+            "defaultLanguage": "en",
+            "description": "Catalog description",
+            "file": "",
+            "fileUrl": "",
+            "hideVariants": false,
+            "title": "Catalog title",
+          },
+          "flags": Object {
+            "canHideVariants": true,
+            "canUploadFile": true,
+          },
+          "getFormData": [Function],
+          "languages": Array [
+            "en",
+            "es",
+            "ru",
+            "de",
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <ButtonCancel
+              handlerCallBack={[Function]}
+            />,
+            <ButtonSave
+              handlerCallBack={[Function]}
+            />,
+          ],
+          "className": "catalog-settings__splitter margin-left-auto margin-right-auto margin-top-30 margin-bot-30",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "handlerCallBack": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "handlerCallBack": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Title />,
+          <SettignsContent
+            data={
+              Object {
+                "additionalLanguages": Array [
+                  "es",
+                  "ru",
+                ],
+                "defaultFallback": true,
+                "defaultLanguage": "en",
+                "description": "Catalog description",
+                "file": "",
+                "fileUrl": "",
+                "hideVariants": false,
+                "title": "Catalog title",
+              }
+            }
+            flags={
+              Object {
+                "canHideVariants": true,
+                "canUploadFile": true,
+              }
+            }
+            getFormData={[Function]}
+            languages={
+              Array [
+                "en",
+                "es",
+                "ru",
+                "de",
+              ]
+            }
+          />,
+          <div
+            className="catalog-settings__splitter margin-left-auto margin-right-auto margin-top-30 margin-bot-30"
+          >
+            <ButtonCancel
+              handlerCallBack={[Function]}
+            />
+            <ButtonSave
+              handlerCallBack={[Function]}
+            />
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "additionalLanguages": Array [
+                "es",
+                "ru",
+              ],
+              "defaultFallback": true,
+              "defaultLanguage": "en",
+              "description": "Catalog description",
+              "file": "",
+              "fileUrl": "",
+              "hideVariants": false,
+              "title": "Catalog title",
+            },
+            "flags": Object {
+              "canHideVariants": true,
+              "canUploadFile": true,
+            },
+            "getFormData": [Function],
+            "languages": Array [
+              "en",
+              "es",
+              "ru",
+              "de",
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <ButtonCancel
+                handlerCallBack={[Function]}
+              />,
+              <ButtonSave
+                handlerCallBack={[Function]}
+              />,
+            ],
+            "className": "catalog-settings__splitter margin-left-auto margin-right-auto margin-top-30 margin-bot-30",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "handlerCallBack": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "handlerCallBack": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
