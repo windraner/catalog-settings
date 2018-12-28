@@ -1,6 +1,5 @@
 .catalog-settings-content__hint {
-  font-size: 1.2em;
-  line-height: 1.5em;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
   color: #7f8fa4;
-  margin: 4px 0 0 0;
 }

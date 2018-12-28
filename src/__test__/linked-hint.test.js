@@ -1,5 +1,5 @@
 import React from 'react';
-import LinkedHint from '../components/settings-content/upload-block/linkedHint/linked-hint';
+import LinkedHint from '../components/settings-content/upload-block/linked-hint/linked-hint';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import toJson from 'enzyme-to-json';

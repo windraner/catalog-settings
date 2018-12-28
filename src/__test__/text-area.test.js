@@ -1,5 +1,5 @@
 import React from 'react';
-import TextArea from '../components/settingsContent/textArea/text-area';
+import TextArea from '../components/settings-content/text-area/text-area';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import toJson from 'enzyme-to-json';

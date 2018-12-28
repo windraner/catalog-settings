@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ToolTip from '../../../tool-tip/tool-tip';
 
-import './disabledLinkInput.css';
+import './disabled-link-input.css';
 
 export default class DisabledLinkInput extends Component {
   state = {
@@ -19,9 +19,9 @@ export default class DisabledLinkInput extends Component {
       <div
         onMouseEnter={() => this.hoverHandler(true)}
         onMouseLeave={() => this.hoverHandler(false)}
-        className="catalog-settings-content__link-input catalog-settings-content__link-input_disabled"
+        className="catalog-settings-content__link-input w-100 catalog-settings-content__link-input_disabled position-relative"
       >
-        <div className="catalog-settings-content__tooltip-wrapper">
+        <div className="d-flex justify-content-center">
           <ToolTip
             isShow={isTooltipShow}
             text={'Remove uploaded file to add link to CSV source file'}

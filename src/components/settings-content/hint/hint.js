@@ -5,7 +5,7 @@ import './hint.css';
 
  const Hint = (props) => {
     return (
-      <div className="catalog-settings-content__hint">
+      <div className="catalog-settings-content__hint mt-1">
         {props.text}
       </div>
     );

@@ -1,23 +1,17 @@
 .catalog-settings-content {
-  width: 860px;
+  width: 53.75rem;
   background: #f8fafb;
   border: solid 1px #e2e7ee;
   border-radius: 4px;
-  padding: 40px 0;
+  padding: 2.5rem 0;
 }
 
 .catalog-settings-content__wrapper {
-  padding: 0 45px;
-}
-
-.catalog-settings-content__splitter {
-  display: flex;
-  justify-content: space-between;
+  padding: 0 2.8125rem;
 }
 
 .catalog-settings-content__error-message {
   color: #ed1c24;
   font-size: 0.75rem;
   font-weight: 600;
-  margin: 5px 0 0 0;
 }

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Switch /> matches the snapshot 1`] = `
+<label
+  className="d-flex"
+>
+  <input
+    checked={true}
+    className="catalog-settings-content__switch-input position-relative m-0"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <span
+    className="catalog-settings-content__switch-text"
+  >
+    On
+  </span>
+</label>
+`;

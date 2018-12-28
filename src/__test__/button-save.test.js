@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonSave from '../components/buttonSave/button-save';
+import ButtonSave from '../components/button-save/button-save';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 

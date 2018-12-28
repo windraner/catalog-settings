@@ -1,17 +1,11 @@
-.catalog-settings-content__switch-label {
-  display: flex;
-}
-
 .catalog-settings-content__switch-input {
   appearance: none;
   background: #c5d0de;
   border-radius: 0.625rem;
   box-shadow: none;
   outline: none;
-  position: relative;
-  height: 20px;
-  width: 36px;
-  margin: 0;
+  height: 1.25rem;
+  width: 2.25rem;
 }
 
 .catalog-settings-content__switch-input:not(:disabled):checked {
@@ -38,9 +32,9 @@
 }
 
 .catalog-settings-content__switch-text {
-  font-size: 1.4em;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 1.5em;
+  line-height: 0.9375rem;
   box-sizing: border-box;
-  margin: 0 0 0 12px;
+  margin: 0 0 0 0.75rem;
 }

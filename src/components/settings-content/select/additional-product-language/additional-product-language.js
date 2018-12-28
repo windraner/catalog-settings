@@ -25,6 +25,7 @@ export default class AdditionalProductLanguage extends Component {
 
     return (
       <Select
+        className="mt-1"
         value={createSelectOptions(additionalLanguages)}
         onChange={this.handleChange}
         options={createSelectOptions(languages)}
@@ -33,9 +34,9 @@ export default class AdditionalProductLanguage extends Component {
         placeholder={''}
         styles={{
           menu: (base) => ({ ...base, margin: 0}),
-          menuList: (base) => ({ ...base, fontSize: '1.4em', fontWeight: 600 }),
+          menuList: (base) => ({ ...base, fontSize: '1rem', fontWeight: 600 }),
           valueContainer: (base) => ({ ...base, paddingLeft: 0, height: '100%' }),
-          input: (base) => ({ ...base, fontSize: '1.4em' }),
+          input: (base) => ({ ...base, fontSize: '1rem' }),
         }}
         components={{
           Control: ControlWithoutValidation,

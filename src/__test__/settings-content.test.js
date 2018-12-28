@@ -1,5 +1,5 @@
 import React from 'react';
-import SettingsContent from '../components/settingsContent/settings-content';
+import SettingsContent from '../components/settings-content/settings-content';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 

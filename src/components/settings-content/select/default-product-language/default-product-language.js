@@ -30,6 +30,7 @@ export default class DefaultProductLanguage extends Component {
 
     return (
       <Select
+        className="mt-1"
         defaultFallback={defaultFallback}
         value={defaultLanguage ? {value: defaultLanguage, label: defaultLanguage} : ''}
         onChange={this.handleChange}
@@ -39,9 +40,9 @@ export default class DefaultProductLanguage extends Component {
         placeholder={''}
         styles={{
           menu: (base) => ({ ...base, margin: 0}),
-          menuList: (base) => ({ ...base, fontSize: '1.4em', fontWeight: 600 }),
+          menuList: (base) => ({ ...base, fontSize: '1rem', fontWeight: 600 }),
           valueContainer: (base) => ({ ...base, paddingLeft: 0, height: '100%' }),
-          input: (base) => ({ ...base, fontSize: '1.4em' }),
+          input: (base) => ({ ...base, fontSize: '1rem' }),
         }}
         components={{
           Control,

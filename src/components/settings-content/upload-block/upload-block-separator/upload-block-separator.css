@@ -1,18 +1,18 @@
 .catalog-settings-content__upload-separator {
-  width: 90px;
-  min-width: 90px;
+  width: 5.625rem;
+  min-width: 5.625rem;
 }
 
 .catalog-settings-content__upload-separator-border {
   width: 2px;
   height: 45%;
-  margin: 0 auto;
   background: #c5d0de;
 }
 
 .catalog-settings-content__upload-separator-text {
   height: 10%;
-  font-size: 1.4em;
+  font-size: 0.875rem;
   font-weight: 600;
   text-align: center;
+  line-height: 1rem;
 }

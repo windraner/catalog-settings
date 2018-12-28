@@ -28,7 +28,7 @@ export default class InputField extends Component {
     const { required } = this.props;
     const { isValidated } = this.state;
     if(required && isValidated) {
-      return (<div className="catalog-settings-content__error-message">Can not be empty</div>);
+      return (<div className="catalog-settings-content__error-message mt-1">Can not be empty</div>);
     }
     return null;
   }
@@ -37,9 +37,9 @@ export default class InputField extends Component {
     const { value, required } = this.props;
     const { isValidated } = this.state;
     const className = (required && isValidated ?
-      'catalog-settings-content__input-field catalog-settings-content__input-field_error'
+      'catalog-settings-content__input-field d-block w-100 mt-1 catalog-settings-content__input-field_error'
       :
-      'catalog-settings-content__input-field');
+      'catalog-settings-content__input-field d-block w-100 mt-1');
 
     return (
       <Fragment>

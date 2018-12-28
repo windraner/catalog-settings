@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import DisabledUploadButton from './disabledUploadButton/DisabledUploadButton';
-import UploadButtonRemove from './uploadButtonRemove/UploadButtonRemove';
+import DisabledUploadButton from './disabled-upload-button/disabled-upload-button';
+import UploadButtonRemove from './upload-button-remove/upload-button-remove';
 import PropTypes from 'prop-types';
 
 import './upload-button.css';
@@ -29,7 +29,7 @@ export default class UploadButton extends Component {
     }
 
     return (
-      <label htmlFor="upload_doc" className="catalog-settings-content__upload-button">
+      <label htmlFor="upload_doc" className="catalog-settings-content__upload-button position-relative d-flex justify-content-center">
         <span className="catalog-settings-content__upload-button-icon"></span>
         <span>Upload file</span>
         <input
@@ -37,7 +37,7 @@ export default class UploadButton extends Component {
           onChange={this.changeHandler}
           id="upload_doc"
           type="file"
-          className="catalog-settings-content__upload-input"
+          className="d-none"
         />
       </label>
     );

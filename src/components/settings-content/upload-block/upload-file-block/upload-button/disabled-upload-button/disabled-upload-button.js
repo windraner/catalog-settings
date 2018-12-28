@@ -17,7 +17,7 @@ export default class DisabledUploadButton extends Component {
       <div
         onMouseEnter={() => this.hoverHandler(true)}
         onMouseLeave={() => this.hoverHandler(false)}
-        className="catalog-settings-content__upload-button catalog-settings-content__upload-button_disabled"
+        className="catalog-settings-content__upload-button position-relative d-flex justify-content-center catalog-settings-content__upload-button_disabled"
       >
         <ToolTip
           isShow={isTooltipShow}

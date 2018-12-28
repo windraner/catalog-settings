@@ -1,16 +1,13 @@
 .catalog-settings-content__textarea {
-  display: block;
-  min-height: 120px;
-  width: 100%;
+  min-height: 7.5rem;
   box-sizing: border-box;
   border: 1px solid #d0d6de;
   border-radius: 4px;
   color: #354052;
-  font-size: 1.4em;
+  font-size: 0.875rem;
   font-family: "Proxima Nova", sans-serif;
-  line-height: 1.5em;
+  line-height: 0.9375rem;
   font-weight: 600;
   outline: none;
-  padding: 0.5em 0.75em;
-  margin: 5px 0 0 0;
+  padding: 0.3125rem 0.46875rem;
 }

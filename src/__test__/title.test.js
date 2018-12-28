@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from '../components/settingsContent/title/title';
+import Title from '../components/settings-content/title/title';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 

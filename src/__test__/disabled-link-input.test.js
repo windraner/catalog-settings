@@ -1,5 +1,5 @@
 import React from 'react';
-import DisabledLinkInput from './DisabledLinkInput';
+import DisabledLinkInput from '../components/settings-content/upload-block/upload-link-block/link-input/disabled-link-input/disabled-link-input.js';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import toJson from 'enzyme-to-json';

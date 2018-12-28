@@ -10,7 +10,7 @@ const TextArea = (props) => {
       onChange={(e) => props.onChange(props.name, e.target.value)}
       onBlur={(e) => props.onChange(props.name, e.target.value.trim())}
       type="text"
-      className="catalog-settings-content__textarea"
+      className="catalog-settings-content__textarea d-block w-100 mt-1"
     />
   );
 };

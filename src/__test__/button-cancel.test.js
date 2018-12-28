@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonCancel from '../components/buttonCancel/button-cancel';
+import ButtonCancel from '../components/button-cancel/button-cancel';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 

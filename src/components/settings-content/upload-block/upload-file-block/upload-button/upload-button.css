@@ -1,16 +1,13 @@
 .catalog-settings-content__upload-button {
-  position: relative;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  height: 34px;
-  width: 131px;
+  height: 2.125rem;
+  width: 8.125rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   color: #f67646;
-  font-size: 1.4em;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 2.6em;
+  line-height: 1.625rem;
   text-align: center;
   cursor: pointer;
 }
@@ -30,10 +27,6 @@
 
 .catalog-settings-content__upload-button-icon::before {
   content: '\e90b';
-}
-
-.catalog-settings-content__upload-input {
-  display: none;
 }
 
 .catalog-settings-content__upload-button_disabled {

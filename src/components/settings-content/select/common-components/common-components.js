@@ -31,7 +31,7 @@ export const ControlWithoutValidation = (props) => {
 
 export const MultiValueContainer = (props) => {
   return (
-    <div className="catalog-settings-content__select-value-container">
+    <div className="catalog-settings-content__select-value-container d-flex ml-1 pl-3 pr-2">
       {props.children}
     </div>
   );
@@ -48,7 +48,7 @@ export const MultiValueLabel = (props) => {
 export const MultiValueRemove = (props) => {
   return (
     <div
-      className="catalog-settings-content__select-value-remove"
+      className="catalog-settings-content__select-value-remove d-flex justify-content-center"
       onClick={props.innerProps.onClick}
     >
       ×

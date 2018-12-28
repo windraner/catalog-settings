@@ -2,12 +2,12 @@
 
 exports[`<DisabledLinkInput /> matches the snapshot 1`] = `
 <div
-  className="catalog-settings-content__link-input catalog-settings-content__link-input_disabled"
+  className="catalog-settings-content__link-input w-100 catalog-settings-content__link-input_disabled position-relative"
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
   <div
-    className="catalog-settings-content__tooltip-wrapper"
+    className="d-flex justify-content-center"
   >
     <ToolTip
       isShow={false}

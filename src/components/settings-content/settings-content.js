@@ -52,7 +52,7 @@ export default class SettingsContent extends Component {
 
     if(defaultLanguage) {
       return (
-        <div className="catalog-settings-content__splitter margin-top-30">
+        <div className="d-flex justify-content-between margin-top-30">
           <Title title={'Fallback to default language of catalog when requested language is not available?'} />
           <Switch
             handlerCallBack={this.checkboxHandler}
@@ -95,7 +95,7 @@ export default class SettingsContent extends Component {
       return (
         <Fragment>
           <hr className="border-separator margin-top-30 margin-bot-30" />
-          <div className="catalog-settings-content__splitter margin-top-30">
+          <div className="d-flex justify-content-between margin-top-30">
             <Title title={'Do you want to hide product variants?'} />
             <Switch
               handlerCallBack={this.checkboxHandler}
@@ -115,7 +115,7 @@ export default class SettingsContent extends Component {
     const { title, description, defaultLanguage, additionalLanguages, defaultFallback } = this.state;
 
     return (
-      <div className="catalog-settings-content margin-left-auto margin-right-auto margin-top-35">
+      <div className="catalog-settings-content mx-auto margin-top-35">
         <div className="catalog-settings-content__wrapper">
           <Title
             title={'Title'}
@@ -150,7 +150,7 @@ export default class SettingsContent extends Component {
           />
           {
             !defaultLanguage ?
-              <div className="catalog-settings-content__error-message">Can not be empty</div>
+              <div className="catalog-settings-content__error-message mt-1">Can not be empty</div>
               :
               null
           }

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputField /> matches the snapshot 1`] = `
+<Fragment>
+  <input
+    className="catalog-settings-content__input-field d-block w-100 mt-1"
+    onBlur={[Function]}
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</Fragment>
+`;

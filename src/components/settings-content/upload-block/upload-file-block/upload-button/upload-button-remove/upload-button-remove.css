@@ -1,25 +1,21 @@
 .catalog-settings-content__remove-upload-button {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 34px;
+  height: 2.125rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   color: #354052;
-  font-size: 1.4em;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 2.6em;
+  line-height: 1.625rem;
   text-align: center;
-  padding: 0 0 0 16px;
 }
 
 .catalog-settings-content__upload-button-remove-icon {
   font-family: 'IcoMoon', sans-serif;
   color: #ed1c24;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1rem;
   cursor: pointer;
-  padding: 0 16px;
 }
 
 .catalog-settings-content__upload-button-remove-icon:hover {

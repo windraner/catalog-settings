@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import DisabledLinkInput from './disabledLinkInput/DisabledLinkInput';
+import DisabledLinkInput from './disabled-link-input/disabled-link-input';
 import PropTypes from 'prop-types';
 
-import './linkInput.css';
+import './link-input.css';
 
 export default class LinkInput extends Component {
 
@@ -24,18 +24,18 @@ export default class LinkInput extends Component {
     }
 
     return (
-      <div className="catalog-settings-content__link-input-wrapper">
+      <div className="position-relative">
         <input
           value={fileUrl ? fileUrl : ''}
           onChange={this.changeHandler}
           type="text"
           placeholder={placeholder}
-          className="catalog-settings-content__link-input"
+          className="catalog-settings-content__link-input d-block w-100"
         />
         {
           fileUrl ?
             <span
-              className="catalog-settings-content__link-input-clear"
+              className="catalog-settings-content__link-input-clear position-absolute m-auto"
               onClick={this.clearHandler}
             />
             :

@@ -2,7 +2,7 @@
 
 exports[`<UploadLinkBlock /> matches the snapshot 1`] = `
 <div
-  className="catalog-settings-content__upload-link-block"
+  className="catalog-settings-content__upload-link-block w-100"
 >
   <Title
     title="URL of remote products CSV source"

@@ -46,7 +46,7 @@ export default class SettingsComponent extends Component {
           getFormData={this.getFormData}
         />
 
-        <div className="catalog-settings__splitter margin-left-auto margin-right-auto margin-top-30 margin-bot-30">
+        <div className="catalog-settings__splitter d-flex justify-content-between mx-auto margin-top-30 margin-bot-30">
           <ButtonCancel
             handlerCallBack={this.onCancelCallback}
           />

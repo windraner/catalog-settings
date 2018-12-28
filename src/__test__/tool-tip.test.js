@@ -1,5 +1,5 @@
 import React from 'react';
-import ToolTip from './ToolTip';
+import ToolTip from '../components/settings-content/upload-block/tool-tip/tool-tip.js';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import toJson from 'enzyme-to-json';

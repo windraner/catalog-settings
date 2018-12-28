@@ -1,13 +1,13 @@
 .catalog-settings__save-button {
-  height: 46px;
-  width: 150px;
+  height: 2.875rem;
+  width: 9.375rem;
   background: #ea7835;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   color: #fff;
-  font-size: 1.8em;
+  font-size: 1.125rem;
   font-weight: 600;
-  line-height: 2.7em;
+  line-height: 3rem;
   text-align: center;
   cursor: pointer;
 }

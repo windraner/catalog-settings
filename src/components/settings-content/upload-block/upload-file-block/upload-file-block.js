@@ -1,8 +1,8 @@
 import React from 'react';
 import Title from '../../title/title';
 import Hint from '../../hint/hint';
-import LinkedHint from '../linkedHint/linked-hint';
-import UploadButton from './uploadButton/UploadButton';
+import LinkedHint from '../linked-hint/linked-hint';
+import UploadButton from './upload-button/upload-button';
 import PropTypes from 'prop-types';
 
 const UploadFileBlock = (props) => {

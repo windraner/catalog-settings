@@ -1,0 +1,1374 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SettingsContent /> matches the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SettingsContent
+    data={
+      Object {
+        "additionalLanguages": Array [
+          "es",
+          "ru",
+        ],
+        "defaultFallback": true,
+        "defaultLanguage": "en",
+        "description": "Catalog description",
+        "file": "",
+        "fileUrl": "",
+        "hideVariants": false,
+        "title": "Catalog title",
+      }
+    }
+    flags={
+      Object {
+        "canHideVariants": true,
+        "canUploadFile": true,
+      }
+    }
+    getFormData={[Function]}
+    languages={
+      Array [
+        "en",
+        "es",
+        "ru",
+        "de",
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="catalog-settings-content__wrapper"
+        >
+          <Title
+            required={true}
+            title="Title"
+          />
+          <InputField
+            name="title"
+            onChange={[Function]}
+            required={true}
+            value="Catalog title"
+          />
+          <div
+            className="margin-top-30"
+          >
+            <Title
+              title="Description"
+            />
+            <TextArea
+              name="description"
+              onChange={[Function]}
+              value="Catalog description"
+            />
+          </div>
+        </div>,
+        <hr
+          className="border-separator margin-top-30 margin-bot-30"
+        />,
+        <div
+          className="catalog-settings-content__wrapper"
+        >
+          <Title
+            required={true}
+            title="Default product language"
+          />
+          <DefaultProductLanguage
+            defaultFallback={true}
+            defaultLanguage="en"
+            inputHandler={[Function]}
+            languages={
+              Array [
+                "en",
+                "es",
+                "ru",
+                "de",
+              ]
+            }
+          />
+          <Hint
+            text="Please use only letters, numbers, underscores or hypens."
+          />
+          <div
+            className="margin-top-30"
+          >
+            <Title
+              title="Additional product languages in catalog"
+            />
+            <AdditionalProductLanguage
+              additionalLanguages={
+                Array [
+                  "es",
+                  "ru",
+                ]
+              }
+              inputHandler={[Function]}
+              languages={
+                Array [
+                  "en",
+                  "es",
+                  "ru",
+                  "de",
+                ]
+              }
+            />
+          </div>
+          <div
+            className="d-flex justify-content-between margin-top-30"
+          >
+            <Title
+              title="Fallback to default language of catalog when requested language is not available?"
+            />
+            <Switch
+              handlerCallBack={[Function]}
+              isChecked={true}
+              name="defaultFallback"
+            />
+          </div>
+          <React.Fragment>
+            <hr
+              className="border-separator margin-top-30 margin-bot-30"
+            />
+            <UploadBlock
+              file=""
+              fileUrl=""
+              flags={
+                Object {
+                  "canHideVariants": true,
+                  "canUploadFile": true,
+                }
+              }
+              inputHandler={[Function]}
+            />
+          </React.Fragment>
+          <React.Fragment>
+            <hr
+              className="border-separator margin-top-30 margin-bot-30"
+            />
+            <div
+              className="d-flex justify-content-between margin-top-30"
+            >
+              <Title
+                title="Do you want to hide product variants?"
+              />
+              <Switch
+                handlerCallBack={[Function]}
+                isChecked={false}
+                name="hideVariants"
+              />
+            </div>
+          </React.Fragment>
+        </div>,
+      ],
+      "className": "catalog-settings-content mx-auto margin-top-35",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Title
+              required={true}
+              title="Title"
+            />,
+            <InputField
+              name="title"
+              onChange={[Function]}
+              required={true}
+              value="Catalog title"
+            />,
+            <div
+              className="margin-top-30"
+            >
+              <Title
+                title="Description"
+              />
+              <TextArea
+                name="description"
+                onChange={[Function]}
+                value="Catalog description"
+              />
+            </div>,
+          ],
+          "className": "catalog-settings-content__wrapper",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "required": true,
+              "title": "Title",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "title",
+              "onChange": [Function],
+              "required": true,
+              "value": "Catalog title",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Title
+                  title="Description"
+                />,
+                <TextArea
+                  name="description"
+                  onChange={[Function]}
+                  value="Catalog description"
+                />,
+              ],
+              "className": "margin-top-30",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "title": "Description",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "name": "description",
+                  "onChange": [Function],
+                  "value": "Catalog description",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "border-separator margin-top-30 margin-bot-30",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Title
+              required={true}
+              title="Default product language"
+            />,
+            <DefaultProductLanguage
+              defaultFallback={true}
+              defaultLanguage="en"
+              inputHandler={[Function]}
+              languages={
+                Array [
+                  "en",
+                  "es",
+                  "ru",
+                  "de",
+                ]
+              }
+            />,
+            null,
+            <Hint
+              text="Please use only letters, numbers, underscores or hypens."
+            />,
+            <div
+              className="margin-top-30"
+            >
+              <Title
+                title="Additional product languages in catalog"
+              />
+              <AdditionalProductLanguage
+                additionalLanguages={
+                  Array [
+                    "es",
+                    "ru",
+                  ]
+                }
+                inputHandler={[Function]}
+                languages={
+                  Array [
+                    "en",
+                    "es",
+                    "ru",
+                    "de",
+                  ]
+                }
+              />
+            </div>,
+            <div
+              className="d-flex justify-content-between margin-top-30"
+            >
+              <Title
+                title="Fallback to default language of catalog when requested language is not available?"
+              />
+              <Switch
+                handlerCallBack={[Function]}
+                isChecked={true}
+                name="defaultFallback"
+              />
+            </div>,
+            <React.Fragment>
+              <hr
+                className="border-separator margin-top-30 margin-bot-30"
+              />
+              <UploadBlock
+                file=""
+                fileUrl=""
+                flags={
+                  Object {
+                    "canHideVariants": true,
+                    "canUploadFile": true,
+                  }
+                }
+                inputHandler={[Function]}
+              />
+            </React.Fragment>,
+            <React.Fragment>
+              <hr
+                className="border-separator margin-top-30 margin-bot-30"
+              />
+              <div
+                className="d-flex justify-content-between margin-top-30"
+              >
+                <Title
+                  title="Do you want to hide product variants?"
+                />
+                <Switch
+                  handlerCallBack={[Function]}
+                  isChecked={false}
+                  name="hideVariants"
+                />
+              </div>
+            </React.Fragment>,
+          ],
+          "className": "catalog-settings-content__wrapper",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "required": true,
+              "title": "Default product language",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "defaultFallback": true,
+              "defaultLanguage": "en",
+              "inputHandler": [Function],
+              "languages": Array [
+                "en",
+                "es",
+                "ru",
+                "de",
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          null,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "text": "Please use only letters, numbers, underscores or hypens.",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Title
+                  title="Additional product languages in catalog"
+                />,
+                <AdditionalProductLanguage
+                  additionalLanguages={
+                    Array [
+                      "es",
+                      "ru",
+                    ]
+                  }
+                  inputHandler={[Function]}
+                  languages={
+                    Array [
+                      "en",
+                      "es",
+                      "ru",
+                      "de",
+                    ]
+                  }
+                />,
+              ],
+              "className": "margin-top-30",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "title": "Additional product languages in catalog",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "additionalLanguages": Array [
+                    "es",
+                    "ru",
+                  ],
+                  "inputHandler": [Function],
+                  "languages": Array [
+                    "en",
+                    "es",
+                    "ru",
+                    "de",
+                  ],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Title
+                  title="Fallback to default language of catalog when requested language is not available?"
+                />,
+                <Switch
+                  handlerCallBack={[Function]}
+                  isChecked={true}
+                  name="defaultFallback"
+                />,
+              ],
+              "className": "d-flex justify-content-between margin-top-30",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "title": "Fallback to default language of catalog when requested language is not available?",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handlerCallBack": [Function],
+                  "isChecked": true,
+                  "name": "defaultFallback",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <hr
+                  className="border-separator margin-top-30 margin-bot-30"
+                />,
+                <UploadBlock
+                  file=""
+                  fileUrl=""
+                  flags={
+                    Object {
+                      "canHideVariants": true,
+                      "canUploadFile": true,
+                    }
+                  }
+                  inputHandler={[Function]}
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "border-separator margin-top-30 margin-bot-30",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "hr",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "file": "",
+                  "fileUrl": "",
+                  "flags": Object {
+                    "canHideVariants": true,
+                    "canUploadFile": true,
+                  },
+                  "inputHandler": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": Symbol(react.fragment),
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <hr
+                  className="border-separator margin-top-30 margin-bot-30"
+                />,
+                <div
+                  className="d-flex justify-content-between margin-top-30"
+                >
+                  <Title
+                    title="Do you want to hide product variants?"
+                  />
+                  <Switch
+                    handlerCallBack={[Function]}
+                    isChecked={false}
+                    name="hideVariants"
+                  />
+                </div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "border-separator margin-top-30 margin-bot-30",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "hr",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <Title
+                      title="Do you want to hide product variants?"
+                    />,
+                    <Switch
+                      handlerCallBack={[Function]}
+                      isChecked={false}
+                      name="hideVariants"
+                    />,
+                  ],
+                  "className": "d-flex justify-content-between margin-top-30",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "title": "Do you want to hide product variants?",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handlerCallBack": [Function],
+                      "isChecked": false,
+                      "name": "hideVariants",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": Symbol(react.fragment),
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="catalog-settings-content__wrapper"
+          >
+            <Title
+              required={true}
+              title="Title"
+            />
+            <InputField
+              name="title"
+              onChange={[Function]}
+              required={true}
+              value="Catalog title"
+            />
+            <div
+              className="margin-top-30"
+            >
+              <Title
+                title="Description"
+              />
+              <TextArea
+                name="description"
+                onChange={[Function]}
+                value="Catalog description"
+              />
+            </div>
+          </div>,
+          <hr
+            className="border-separator margin-top-30 margin-bot-30"
+          />,
+          <div
+            className="catalog-settings-content__wrapper"
+          >
+            <Title
+              required={true}
+              title="Default product language"
+            />
+            <DefaultProductLanguage
+              defaultFallback={true}
+              defaultLanguage="en"
+              inputHandler={[Function]}
+              languages={
+                Array [
+                  "en",
+                  "es",
+                  "ru",
+                  "de",
+                ]
+              }
+            />
+            <Hint
+              text="Please use only letters, numbers, underscores or hypens."
+            />
+            <div
+              className="margin-top-30"
+            >
+              <Title
+                title="Additional product languages in catalog"
+              />
+              <AdditionalProductLanguage
+                additionalLanguages={
+                  Array [
+                    "es",
+                    "ru",
+                  ]
+                }
+                inputHandler={[Function]}
+                languages={
+                  Array [
+                    "en",
+                    "es",
+                    "ru",
+                    "de",
+                  ]
+                }
+              />
+            </div>
+            <div
+              className="d-flex justify-content-between margin-top-30"
+            >
+              <Title
+                title="Fallback to default language of catalog when requested language is not available?"
+              />
+              <Switch
+                handlerCallBack={[Function]}
+                isChecked={true}
+                name="defaultFallback"
+              />
+            </div>
+            <React.Fragment>
+              <hr
+                className="border-separator margin-top-30 margin-bot-30"
+              />
+              <UploadBlock
+                file=""
+                fileUrl=""
+                flags={
+                  Object {
+                    "canHideVariants": true,
+                    "canUploadFile": true,
+                  }
+                }
+                inputHandler={[Function]}
+              />
+            </React.Fragment>
+            <React.Fragment>
+              <hr
+                className="border-separator margin-top-30 margin-bot-30"
+              />
+              <div
+                className="d-flex justify-content-between margin-top-30"
+              >
+                <Title
+                  title="Do you want to hide product variants?"
+                />
+                <Switch
+                  handlerCallBack={[Function]}
+                  isChecked={false}
+                  name="hideVariants"
+                />
+              </div>
+            </React.Fragment>
+          </div>,
+        ],
+        "className": "catalog-settings-content mx-auto margin-top-35",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Title
+                required={true}
+                title="Title"
+              />,
+              <InputField
+                name="title"
+                onChange={[Function]}
+                required={true}
+                value="Catalog title"
+              />,
+              <div
+                className="margin-top-30"
+              >
+                <Title
+                  title="Description"
+                />
+                <TextArea
+                  name="description"
+                  onChange={[Function]}
+                  value="Catalog description"
+                />
+              </div>,
+            ],
+            "className": "catalog-settings-content__wrapper",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "required": true,
+                "title": "Title",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "title",
+                "onChange": [Function],
+                "required": true,
+                "value": "Catalog title",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Title
+                    title="Description"
+                  />,
+                  <TextArea
+                    name="description"
+                    onChange={[Function]}
+                    value="Catalog description"
+                  />,
+                ],
+                "className": "margin-top-30",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "title": "Description",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "name": "description",
+                    "onChange": [Function],
+                    "value": "Catalog description",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "border-separator margin-top-30 margin-bot-30",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Title
+                required={true}
+                title="Default product language"
+              />,
+              <DefaultProductLanguage
+                defaultFallback={true}
+                defaultLanguage="en"
+                inputHandler={[Function]}
+                languages={
+                  Array [
+                    "en",
+                    "es",
+                    "ru",
+                    "de",
+                  ]
+                }
+              />,
+              null,
+              <Hint
+                text="Please use only letters, numbers, underscores or hypens."
+              />,
+              <div
+                className="margin-top-30"
+              >
+                <Title
+                  title="Additional product languages in catalog"
+                />
+                <AdditionalProductLanguage
+                  additionalLanguages={
+                    Array [
+                      "es",
+                      "ru",
+                    ]
+                  }
+                  inputHandler={[Function]}
+                  languages={
+                    Array [
+                      "en",
+                      "es",
+                      "ru",
+                      "de",
+                    ]
+                  }
+                />
+              </div>,
+              <div
+                className="d-flex justify-content-between margin-top-30"
+              >
+                <Title
+                  title="Fallback to default language of catalog when requested language is not available?"
+                />
+                <Switch
+                  handlerCallBack={[Function]}
+                  isChecked={true}
+                  name="defaultFallback"
+                />
+              </div>,
+              <React.Fragment>
+                <hr
+                  className="border-separator margin-top-30 margin-bot-30"
+                />
+                <UploadBlock
+                  file=""
+                  fileUrl=""
+                  flags={
+                    Object {
+                      "canHideVariants": true,
+                      "canUploadFile": true,
+                    }
+                  }
+                  inputHandler={[Function]}
+                />
+              </React.Fragment>,
+              <React.Fragment>
+                <hr
+                  className="border-separator margin-top-30 margin-bot-30"
+                />
+                <div
+                  className="d-flex justify-content-between margin-top-30"
+                >
+                  <Title
+                    title="Do you want to hide product variants?"
+                  />
+                  <Switch
+                    handlerCallBack={[Function]}
+                    isChecked={false}
+                    name="hideVariants"
+                  />
+                </div>
+              </React.Fragment>,
+            ],
+            "className": "catalog-settings-content__wrapper",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "required": true,
+                "title": "Default product language",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "defaultFallback": true,
+                "defaultLanguage": "en",
+                "inputHandler": [Function],
+                "languages": Array [
+                  "en",
+                  "es",
+                  "ru",
+                  "de",
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            null,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "text": "Please use only letters, numbers, underscores or hypens.",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Title
+                    title="Additional product languages in catalog"
+                  />,
+                  <AdditionalProductLanguage
+                    additionalLanguages={
+                      Array [
+                        "es",
+                        "ru",
+                      ]
+                    }
+                    inputHandler={[Function]}
+                    languages={
+                      Array [
+                        "en",
+                        "es",
+                        "ru",
+                        "de",
+                      ]
+                    }
+                  />,
+                ],
+                "className": "margin-top-30",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "title": "Additional product languages in catalog",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "additionalLanguages": Array [
+                      "es",
+                      "ru",
+                    ],
+                    "inputHandler": [Function],
+                    "languages": Array [
+                      "en",
+                      "es",
+                      "ru",
+                      "de",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Title
+                    title="Fallback to default language of catalog when requested language is not available?"
+                  />,
+                  <Switch
+                    handlerCallBack={[Function]}
+                    isChecked={true}
+                    name="defaultFallback"
+                  />,
+                ],
+                "className": "d-flex justify-content-between margin-top-30",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "title": "Fallback to default language of catalog when requested language is not available?",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handlerCallBack": [Function],
+                    "isChecked": true,
+                    "name": "defaultFallback",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <hr
+                    className="border-separator margin-top-30 margin-bot-30"
+                  />,
+                  <UploadBlock
+                    file=""
+                    fileUrl=""
+                    flags={
+                      Object {
+                        "canHideVariants": true,
+                        "canUploadFile": true,
+                      }
+                    }
+                    inputHandler={[Function]}
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "border-separator margin-top-30 margin-bot-30",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "hr",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "file": "",
+                    "fileUrl": "",
+                    "flags": Object {
+                      "canHideVariants": true,
+                      "canUploadFile": true,
+                    },
+                    "inputHandler": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": Symbol(react.fragment),
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <hr
+                    className="border-separator margin-top-30 margin-bot-30"
+                  />,
+                  <div
+                    className="d-flex justify-content-between margin-top-30"
+                  >
+                    <Title
+                      title="Do you want to hide product variants?"
+                    />
+                    <Switch
+                      handlerCallBack={[Function]}
+                      isChecked={false}
+                      name="hideVariants"
+                    />
+                  </div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "border-separator margin-top-30 margin-bot-30",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "hr",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <Title
+                        title="Do you want to hide product variants?"
+                      />,
+                      <Switch
+                        handlerCallBack={[Function]}
+                        isChecked={false}
+                        name="hideVariants"
+                      />,
+                    ],
+                    "className": "d-flex justify-content-between margin-top-30",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "title": "Do you want to hide product variants?",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "handlerCallBack": [Function],
+                        "isChecked": false,
+                        "name": "hideVariants",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": Symbol(react.fragment),
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

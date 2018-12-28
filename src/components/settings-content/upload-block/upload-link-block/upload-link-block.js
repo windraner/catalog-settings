@@ -1,15 +1,15 @@
 import React from 'react';
 import Title from '../../title/title';
 import Hint from '../../hint/hint';
-import LinkInput from './linkInput/LinkInput';
-import LinkedHint from '../linkedHint/linked-hint';
+import LinkInput from './link-input/link-input';
+import LinkedHint from '../linked-hint/linked-hint';
 import PropTypes from 'prop-types';
 
-import './uploadLinkBlock.css';
+import './upload-link-block.css';
 
 const UploadLinkBlock = (props) => {
   return (
-    <div className="catalog-settings-content__upload-link-block">
+    <div className="catalog-settings-content__upload-link-block w-100">
       <Title title={'URL of remote products CSV source'} />
 
       <Hint text={

@@ -5,11 +5,11 @@ import './switch.css';
 
  const Switch = (props) => {
   return (
-    <label className="catalog-settings-content__switch-label">
+    <label className="d-flex">
       <input
         checked={props.isChecked}
         type="checkbox"
-        className="catalog-settings-content__switch-input"
+        className="catalog-settings-content__switch-input position-relative m-0"
         onChange={() => props.handlerCallBack(props.name)}
       />
       <span className="catalog-settings-content__switch-text">{props.isChecked ? 'On' : 'Off'}</span>

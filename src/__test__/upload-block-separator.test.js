@@ -1,5 +1,5 @@
 import React from 'react';
-import UploadBlockSeparator from './UploadBlockSeparator';
+import UploadBlockSeparator from '../components/settings-content/upload-block/upload-block-separator/upload-block-separator.js';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import toJson from 'enzyme-to-json';

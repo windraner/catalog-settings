@@ -1,5 +1,5 @@
 import React from 'react';
-import UploadButtonRemove from './UploadButtonRemove';
+import UploadButtonRemove from '../components/settings-content/upload-block/upload-file-block/upload-button/upload-button-remove/upload-button-remove';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import toJson from 'enzyme-to-json';

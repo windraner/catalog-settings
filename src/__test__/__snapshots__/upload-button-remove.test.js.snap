@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UploadButtonRemove /> matches the snapshot 1`] = `
+<div
+  className="catalog-settings-content__remove-upload-button pl-3 d-flex justify-content-between"
+>
+  <span />
+  <span
+    className="catalog-settings-content__upload-button-remove-icon px-3"
+    onClick={[Function]}
+  />
+</div>
+`;

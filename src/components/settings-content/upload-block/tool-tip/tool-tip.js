@@ -12,7 +12,7 @@ export default class ToolTip extends Component {
     }
 
     return (
-      <div className="catalog-settings-content__upload-tool-tip">
+      <div className="catalog-settings-content__upload-tool-tip position-absolute">
         {text}
       </div>
     );

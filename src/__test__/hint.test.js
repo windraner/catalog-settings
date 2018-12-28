@@ -1,5 +1,5 @@
 import React from 'react';
-import Hint from '../components/settingsContent/hint/hint';
+import Hint from '../components/settings-content/hint/hint';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import toJson from 'enzyme-to-json';

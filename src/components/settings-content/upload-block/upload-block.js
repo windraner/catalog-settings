@@ -1,14 +1,12 @@
 import React from 'react';
-import UploadLinkBlock from './upload-link-block/UploadLinkBlock';
-import UploadBlockSeparator from './upload-block-separator/UploadBlockSeparator';
-import UploadFileBlock from './upload-file-block/UploadFileBlock';
+import UploadLinkBlock from './upload-link-block/upload-link-block';
+import UploadBlockSeparator from './upload-block-separator/upload-block-separator';
+import UploadFileBlock from './upload-file-block/upload-file-block';
 import PropTypes from 'prop-types';
-
-import './upload-block.css';
 
 const UploadBlock = (props) => {
   return (
-    <div className="catalog-settings-content__upload-block">
+    <div className="d-flex justify-content-between">
       <UploadLinkBlock
         {...props}
       />

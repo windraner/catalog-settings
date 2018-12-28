@@ -2,17 +2,17 @@
 
 exports[`<LinkInput /> matches the snapshot1 1`] = `
 <div
-  className="catalog-settings-content__link-input-wrapper"
+  className="position-relative"
 >
   <input
-    className="catalog-settings-content__link-input"
+    className="catalog-settings-content__link-input d-block w-100"
     onChange={[Function]}
     placeholder="test"
     type="text"
     value="fileUrl"
   />
   <span
-    className="catalog-settings-content__link-input-clear"
+    className="catalog-settings-content__link-input-clear position-absolute m-auto"
     onClick={[Function]}
   />
 </div>

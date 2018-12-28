@@ -1,5 +1,5 @@
 import React from 'react';
-import UploadLinkBlock from './UploadLinkBlock';
+import UploadLinkBlock from '../components/settings-content/upload-block/upload-link-block/upload-link-block';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import toJson from 'enzyme-to-json';

@@ -1,5 +1,5 @@
 import React from 'react';
-import LinkInput from './LinkInput';
+import LinkInput from '../components/settings-content/upload-block/upload-link-block/link-input/link-input.js';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import toJson from 'enzyme-to-json';
@@ -16,7 +16,7 @@ describe('<LinkInput />', () => {
     wrapper.setProps({fileUrl: ''});
     expect(wrapper.find('.catalog-settings-content__link-input-clear').length).toBe(0);
     wrapper.setProps({file: {}});
-    expect(wrapper.find('.catalog-settings-content__link-input-wrapper').length).toBe(0);
+    expect(wrapper.find('.position-relative').length).toBe(0);
   });
   it('matches the snapshot1', () => {
     const tree = shallow(<LinkInput placeholder="test" inputHandler={function() {}} fileUrl="fileUrl" file={''} flags={{}} />);

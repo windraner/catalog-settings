@@ -1,5 +1,5 @@
 import React from 'react';
-import InputField from '../components/settingsContent/inputField/input-field';
+import InputField from '../components/settings-content/input-field/input-field';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import toJson from 'enzyme-to-json';
